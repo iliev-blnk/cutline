@@ -91,6 +91,26 @@ def cmd_snapshot(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_backtest(args: argparse.Namespace) -> int:
+    import os
+
+    for v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
+        os.environ.setdefault(v, "1")
+    from . import backtest
+    from .fit import TUNED
+
+    if args.stage == "tune":
+        best = backtest.tune(args.processes)
+        print(f"best: {best} (research/tune.csv)")
+        return 0
+    if TUNED is None:
+        print("refusing to test: pin TUNED in cutline/fit.py first")
+        return 1
+    out = backtest.test(TUNED, args.processes)
+    print(f"test written: research/test.json ({out['match_level']['ucl']['n']} UCL matches)")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="cutline")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -107,8 +127,11 @@ def main(argv: list[str] | None = None) -> int:
     sn = sub.add_parser("snapshot", help="gate, fit and simulate; write predictions/<Y>/<date>-before-MD<n>.json")
     sn.add_argument("--force", action="store_true")
     sn.add_argument("--n", type=int, default=10000)
+    b = sub.add_parser("backtest", help="tune on 2023-24, or test once on 2024-25 + 2025-26")
+    b.add_argument("stage", choices=["tune", "test"])
+    b.add_argument("--processes", type=int, default=8)
     args = p.parse_args(argv)
-    return {"ingest": cmd_ingest, "fit": cmd_fit, "export-fixtures": cmd_export_fixtures,
+    return {"backtest": cmd_backtest, "ingest": cmd_ingest, "fit": cmd_fit, "export-fixtures": cmd_export_fixtures,
             "snapshot": cmd_snapshot}[args.cmd](args)
 
 

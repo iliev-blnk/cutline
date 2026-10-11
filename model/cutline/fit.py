@@ -38,7 +38,7 @@ class Hyper:
 
 DEFAULT = Hyper()
 # Set from the 2023-24 tuning run (research/tune.csv) before the test seasons are scored; None = untuned.
-TUNED: Hyper | None = None
+TUNED: Hyper | None = Hyper(half_life=365.0, lambda_team=3.0, lambda_country=0.03, xg_blend=0.0)
 
 
 def time_weights(age_days: np.ndarray, half_life: float) -> np.ndarray:
