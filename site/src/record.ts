@@ -15,10 +15,13 @@ async function start() {
   const index = await loadIndex();
   const season = await get<SeasonJson>("season.json");
   const snaps = await Promise.all(index.map((i) => get<Snapshot & { baseline?: Baseline }>("snapshots/" + i.file)));
+  const odds = await Promise.all(
+    index.map((i) => ((i as { odds?: boolean }).odds ? get<{ fixtures: Record<string, [number, number, number]> }>("snapshots/" + i.file.replace(/\.json$/, ".odds.json")) : null)),
+  );
   const name = (c: string) => esc(season.clubs[c]?.name ?? c);
   const byId = new Map(season.fixtures.map((f) => [f.id, f]));
 
-  const totals = { model: [] as number[], elo: [] as number[] };
+  const totals = { model: [] as number[], elo: [] as number[], market: [] as number[], modelVsMarket: [] as number[] };
   const blocks = snaps.map((s, k) => {
     const fx = season.fixtures.filter((f) => f.md === s.beforeMd);
     const rows = fx.map((f) => {
@@ -31,6 +34,11 @@ async function start() {
         totals.model.push(v);
         const b = s.baseline?.fixtures[f.id];
         if (b) totals.elo.push(rps([b.h, b.d, b.a], o));
+        const mk = odds[k]?.fixtures[f.id];
+        if (mk) {
+          totals.market.push(rps(mk, o));
+          totals.modelVsMarket.push(v);
+        }
         score = `${f.hg}–${f.ag}`;
         r = v.toFixed(3);
       }
@@ -52,7 +60,10 @@ async function start() {
   document.getElementById("summary")!.innerHTML =
     `<p>Matches scored: ${totals.model.length}. Mean RPS: model ${mean(totals.model)}` +
     (totals.elo.length ? `, Elo baseline ${mean(totals.elo)}` : "") +
-    `.</p>`;
+    `.</p>` +
+    (totals.market.length
+      ? `<p>On the ${totals.market.length} matches with bookmaker odds: model ${mean(totals.modelVsMarket)}, market ${mean(totals.market)}.</p>`
+      : `<p class="muted">No Champions League bookmaker odds recorded yet; the market comparison so far is the domestic backtest on the method page.</p>`);
   document.getElementById("snapshots")!.innerHTML = blocks.reverse().join("");
   drawClub(snaps, season);
 }

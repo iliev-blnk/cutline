@@ -115,6 +115,32 @@ def cmd_backtest(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_odds(args: argparse.Namespace) -> int:
+    import json
+    import os
+
+    from .gate import list_snapshots
+    from .matches import CURRENT, DATA
+    from .odds import fetch_odds, load_aliases, match_odds_to_fixtures
+
+    key = os.environ.get("ODDS_API_KEY", "")
+    if not key:
+        print("skip: no ODDS_API_KEY")
+        return 0
+    pred = DATA.parent / "predictions" / str(CURRENT)
+    snap_path = list_snapshots(pred)[-1]
+    snap = json.loads(snap_path.read_text())
+    season = json.loads((DATA / f"season-{CURRENT}.json").read_text())
+    got = match_odds_to_fixtures(fetch_odds(key), season, load_aliases(DATA / "odds_aliases.csv"))
+    want = [f["id"] for f in season["fixtures"] if f["md"] == snap["beforeMd"]]
+    odds = {i: got[i] for i in want if i in got}
+    (pred / "odds").mkdir(exist_ok=True)
+    out = pred / "odds" / snap_path.name
+    out.write_text(json.dumps({"snapshot": snap_path.name, "fetched": len(got), "fixtures": odds}, indent=1))
+    print(f"odds: {len(odds)}/{len(want)} MD{snap['beforeMd']} fixtures matched -> {out.relative_to(DATA.parent)}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="cutline")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -134,8 +160,9 @@ def main(argv: list[str] | None = None) -> int:
     b = sub.add_parser("backtest", help="tune on 2023-24, or test once on 2024-25 + 2025-26")
     b.add_argument("stage", choices=["tune", "test"])
     b.add_argument("--processes", type=int, default=8)
+    sub.add_parser("odds", help="store market odds for the latest snapshot's matchday (needs ODDS_API_KEY)")
     args = p.parse_args(argv)
-    return {"backtest": cmd_backtest, "ingest": cmd_ingest, "fit": cmd_fit, "export-fixtures": cmd_export_fixtures,
+    return {"odds": cmd_odds, "backtest": cmd_backtest, "ingest": cmd_ingest, "fit": cmd_fit, "export-fixtures": cmd_export_fixtures,
             "snapshot": cmd_snapshot}[args.cmd](args)
 
 

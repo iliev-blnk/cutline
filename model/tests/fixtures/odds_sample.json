@@ -1,0 +1,16 @@
+[
+ {"id": "e1", "sport_key": "soccer_uefa_champs_league", "commence_time": "2026-10-13T16:45:00Z",
+  "home_team": "RC Lens", "away_team": "Sporting Lisbon",
+  "bookmakers": [
+   {"key": "pinnacle", "markets": [{"key": "h2h", "outcomes": [
+     {"name": "RC Lens", "price": 2.6}, {"name": "Sporting Lisbon", "price": 2.75}, {"name": "Draw", "price": 3.4}]}]},
+   {"key": "unibet_eu", "markets": [{"key": "h2h", "outcomes": [
+     {"name": "RC Lens", "price": 2.5}, {"name": "Sporting Lisbon", "price": 2.8}, {"name": "Draw", "price": 3.3}]}]}
+  ]},
+ {"id": "e2", "sport_key": "soccer_uefa_champs_league", "commence_time": "2026-10-13T19:00:00Z",
+  "home_team": "Arsenal", "away_team": "Lille",
+  "bookmakers": [{"key": "pinnacle", "markets": [{"key": "h2h", "outcomes": [
+     {"name": "Arsenal", "price": 1.35}, {"name": "Lille", "price": 8.5}, {"name": "Draw", "price": 5.2}]}]}]},
+ {"id": "e3", "sport_key": "soccer_uefa_champs_league", "commence_time": "2026-11-03T20:00:00Z",
+  "home_team": "Somebody", "away_team": "Nobody", "bookmakers": []}
+]

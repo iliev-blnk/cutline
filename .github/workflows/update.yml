@@ -41,6 +41,10 @@ jobs:
       - id: snap
         run: cutline snapshot ${{ inputs.force && '--force' || '' }}
       - if: steps.snap.outputs.created != ''
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: cutline odds
+      - if: steps.snap.outputs.created != ''
         run: |
           git config user.name "cutline-bot"
           git config user.email "actions@users.noreply.github.com"
