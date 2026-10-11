@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 import { Rng } from "../src/rng.ts";
-import { buildCdf, matchProbs, sampleScore, scoreMatrix } from "../src/score.ts";
+import { buildCdf, matchProbs, sampleDC, sampleScore, scoreMatrix } from "../src/score.ts";
 
 const pois = (k: number, l: number) => {
   let p = Math.exp(-l);
@@ -37,6 +37,22 @@ describe("score", () => {
       expect(Math.abs(obs - q)).toBeLessThan(3 * Math.sqrt((q * (1 - q)) / n));
     }
     expect(p.h + p.d + p.a).toBeCloseTo(1, 12);
+  });
+
+  test("sampleDC (Poisson + rejection) matches the Dixon-Coles matrix", () => {
+    const lh = 1.3, la = 0.8, rho = -0.1;
+    const m = scoreMatrix(lh, la, rho);
+    const rng = new Rng(9);
+    const n = 1_000_000;
+    const counts = new Float64Array(121);
+    for (let i = 0; i < n; i++) {
+      const [x, y] = sampleDC(lh, la, rho, rng);
+      counts[x * 11 + y]++;
+    }
+    for (const cell of [0, 1, 11, 12, 22, 2]) {
+      const q = m[cell];
+      expect(Math.abs(counts[cell] / n - q)).toBeLessThan(3 * Math.sqrt((q * (1 - q)) / n));
+    }
   });
 
   test("same seed gives the same sequence", () => {

@@ -61,3 +61,29 @@ export function sampleScore(cdf: Float64Array, rng: Rng): [number, number] {
   while (cdf[i] <= u) i++;
   return [(i / N) | 0, i % N];
 }
+
+function poissonSample(l: number, rng: Rng): number {
+  // inversion; λ is small (< 5) for football scores
+  const u = rng.next();
+  let k = 0, p = Math.exp(-l), c = p;
+  while (u >= c && k < MAX_GOALS) {
+    k++;
+    p *= l / k;
+    c += p;
+  }
+  return k;
+}
+
+/** Exact Dixon–Coles sample without building the matrix: independent Poissons + rejection on τ. */
+export function sampleDC(lh: number, la: number, rho: number, rng: Rng): [number, number] {
+  const tauMax = Math.max(1, 1 - lh * la * rho, 1 + lh * rho, 1 + la * rho, 1 - rho);
+  for (;;) {
+    const x = poissonSample(lh, rng), y = poissonSample(la, rng);
+    let tau = 1;
+    if (x === 0 && y === 0) tau = 1 - lh * la * rho;
+    else if (x === 0 && y === 1) tau = 1 + lh * rho;
+    else if (x === 1 && y === 0) tau = 1 + la * rho;
+    else if (x === 1 && y === 1) tau = 1 - rho;
+    if (tau >= tauMax || rng.next() * tauMax < tau) return [x, y];
+  }
+}
