@@ -1,12 +1,13 @@
 import type { SeasonJson } from "@cutline/sim";
 import { loadIndex } from "./data.ts";
-import { day, pct } from "./format.ts";
+import { day, pct, phaseLabel } from "./format.ts";
 import { outcome, rps } from "./metrics.ts";
 import type { Snapshot } from "./types.ts";
 
 const base = import.meta.env.BASE_URL + "data/";
 const get = async <T>(p: string): Promise<T> => (await fetch(base + p)).json();
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+const lc = (s: string) => s[0].toLowerCase() + s.slice(1);
 const repo = "https://github.com/iliev-blnk/cutline/blob/main/predictions/2027/";
 
 type Baseline = { fixtures: Record<string, { h: number; d: number; a: number }> };
@@ -49,7 +50,7 @@ async function start() {
       );
     });
     return (
-      `<div class="snapshot"><p><a href="${repo}${index[k].file}">${day(s.generatedAt)}</a>, before Matchday ${s.beforeMd}` +
+      `<div class="snapshot"><p><a href="${repo}${index[k].file}">${day(s.generatedAt)}</a>, ${lc(phaseLabel(s.beforeMd))}` +
       `${s.untuned ? " (untuned)" : ""}</p>` +
       `<div class="fixture-head muted"><span class="teams"></span><span class="p">H</span><span class="p">D</span><span class="p">A</span><span class="p">result</span><span class="p">RPS</span></div>` +
       rows.join("") +
@@ -81,7 +82,8 @@ function drawClub(snaps: Snapshot[], season: SeasonJson) {
     const W = 560, H = 120, step = W / 8;
     let d = "";
     vals.forEach((v, i) => {
-      const x0 = (snaps[i].beforeMd! - 1) * step, x1 = x0 + step, y = H - v * H;
+      const md = snaps[i].beforeMd ?? 9; // after the league phase: right edge
+      const x0 = Math.min(md - 1, 7) * step, x1 = x0 + step, y = H - v * H;
       d += `${i ? "L" : "M"}${x0},${y}H${x1}`;
     });
     const labels = Array.from({ length: 8 }, (_, i) => `<text x="${i * step + 2}" y="${H + 14}">MD${i + 1}</text>`).join("");
@@ -90,7 +92,7 @@ function drawClub(snaps: Snapshot[], season: SeasonJson) {
       `<line x1="0" x2="${W}" y1="${H}" y2="${H}" stroke="#000" stroke-width="0.5"/><line x1="0" x2="${W}" y1="0" y2="0" stroke="#000" stroke-width="0.5" stroke-dasharray="2 3"/>` +
       `<text x="-28" y="4">100</text><text x="-14" y="${H + 3}">0</text>${labels}` +
       `<path d="${d}" fill="none" stroke="#000" stroke-width="1.5"/></svg>` +
-      `<p class="muted">${vals.map((v, i) => `before MD${snaps[i].beforeMd}: ${pct(v)}%`).join(" · ")}</p>`;
+      `<p class="muted">${vals.map((v, i) => `${lc(phaseLabel(snaps[i].beforeMd))}: ${pct(v)}%`).join(" · ")}</p>`;
   };
   sel.addEventListener("change", draw);
   draw();

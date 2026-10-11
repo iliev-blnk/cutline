@@ -8,7 +8,7 @@ const pred = join(root, "predictions", String(year));
 const out = join(root, "site", "public", "data");
 mkdirSync(join(out, "snapshots"), { recursive: true });
 
-const snaps = readdirSync(pred).filter((f) => /-before-MD\d+\.json$/.test(f) && !f.endsWith(".model.json")).sort();
+const snaps = readdirSync(pred).filter((f) => /^\d{4}-\d{2}-\d{2}-(before-MD\d+|knockouts)\.json$/.test(f)).sort();
 if (!snaps.length) throw new Error(`no snapshots in ${pred}`);
 const index = snaps.map((f) => {
   const s = JSON.parse(readFileSync(join(pred, f), "utf8"));

@@ -76,3 +76,19 @@ def test_blocked_decision_still_reports_next_matchday():
     s = season()
     d = gate(s, {"finished": finished(s)}, NOW)
     assert not d.ok and d.before_md == 3
+
+
+def test_snapshot_stem_after_league_phase():
+    from cutline.gate import snapshot_stem
+
+    assert snapshot_stem(NOW, 3) == "2026-10-16-before-MD3"
+    assert snapshot_stem(NOW, None) == "2026-10-16-knockouts"
+
+
+def test_knockout_snapshot_is_listed_so_gate_sees_it(tmp_path):
+    from cutline.gate import list_snapshots
+
+    for n in ("2027-01-26-before-MD8.json", "2027-01-28-knockouts.json", "2027-01-28-knockouts.model.json"):
+        (tmp_path / n).write_text("{}")
+    assert [p.name for p in list_snapshots(tmp_path)][-1] == "2027-01-28-knockouts.json"
+    assert len(list_snapshots(tmp_path)) == 2

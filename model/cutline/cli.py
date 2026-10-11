@@ -56,7 +56,7 @@ def cmd_snapshot(args: argparse.Namespace) -> int:
 
     from .elo import elo_model_json
     from .fit import DEFAULT, TUNED, fit
-    from .gate import gate, list_snapshots
+    from .gate import gate, list_snapshots, snapshot_stem
     from .matches import CURRENT, DATA, load_matches
 
     root = DATA.parent
@@ -74,7 +74,7 @@ def cmd_snapshot(args: argparse.Namespace) -> int:
     hyper = TUNED or DEFAULT
     df = load_matches()
     model = fit(df, now, hyper)
-    stem = f"{now:%Y-%m-%d}-before-MD{d.before_md}"
+    stem = snapshot_stem(now, d.before_md)
     model_path = pred / f"{stem}.model.json"
     out_path = pred / f"{stem}.json"
     model_path.write_text(json.dumps(model.to_json(), indent=1, ensure_ascii=False))

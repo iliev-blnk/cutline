@@ -23,3 +23,7 @@ export function shade(p: number): number {
   if (p < 0.005) return 0;
   return Math.min(1, Math.sqrt(p / 0.25));
 }
+
+export function phaseLabel(beforeMd: number | null): string {
+  return beforeMd === null ? "After the league phase" : `Before Matchday ${beforeMd}`;
+}

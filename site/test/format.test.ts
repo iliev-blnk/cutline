@@ -21,3 +21,9 @@ test("shade reaches full black at 25% and is blank below 0.5%", () => {
   expect(shade(0.6)).toBe(1);
   expect(shade(0.0625)).toBeCloseTo(0.5, 9);
 });
+
+test("phase label handles the end of the league phase", async () => {
+  const { phaseLabel } = await import("../src/format.ts");
+  expect(phaseLabel(2)).toBe("Before Matchday 2");
+  expect(phaseLabel(null)).toBe("After the league phase");
+});

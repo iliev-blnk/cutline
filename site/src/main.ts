@@ -1,7 +1,7 @@
 import { leagueTable, Rng, type ClubOut, type Result, type SeasonOut } from "@cutline/sim";
 import { loadIndex, loadSnapshot } from "./data.ts";
 import { renderFixtures, openMatchdays } from "./fixtures.ts";
-import { day } from "./format.ts";
+import { day, phaseLabel } from "./format.ts";
 import { renderGrid } from "./grid.ts";
 import { decodeForced, encodeForced } from "./hash.ts";
 import type { Loaded } from "./types.ts";
@@ -25,11 +25,11 @@ async function start() {
   let out: SeasonOut = snap;
   let token = 0;
   const mds = openMatchdays(season);
-  const view = { season, probs: snap.fixtures, forced, md: mds[0], open: null as string | null };
+  const view = { season, probs: snap.fixtures, forced, md: mds[0] ?? 0, open: null as string | null };
 
   $("head").innerHTML =
     `<p>cutline — Champions League 2026-27, simulated ${snap.n.toLocaleString("en")} times.</p>` +
-    `<p class="muted">Before Matchday ${snap.beforeMd}, results to ${day(snap.modelCutoff)}. ` +
+    `<p class="muted">${phaseLabel(snap.beforeMd)}, results to ${day(snap.modelCutoff)}. ` +
     `Each row is a club; each column a final league-phase position; darker = more likely. ` +
     `The lines are the cuts after 8th (round of 16) and 24th (play-off).</p>` +
     (snap.untuned ? `<p class="muted">This snapshot uses untuned default settings (the first one, published before the model was backtested).</p>` : "") +

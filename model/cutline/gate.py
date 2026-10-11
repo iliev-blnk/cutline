@@ -47,4 +47,10 @@ def list_snapshots(pred_dir) -> list:
     import re
     from pathlib import Path
 
-    return sorted(p for p in Path(pred_dir).glob("*.json") if re.fullmatch(r"\d{4}-\d{2}-\d{2}-before-MD\d+\.json", p.name))
+    pat = r"\d{4}-\d{2}-\d{2}-(before-MD\d+|knockouts)\.json"
+    return sorted(p for p in Path(pred_dir).glob("*.json") if re.fullmatch(pat, p.name))
+
+
+def snapshot_stem(now: datetime, before_md: int | None) -> str:
+    """<date>-before-MD<n> during the league phase; <date>-knockouts once all 144 matches are played."""
+    return f"{now:%Y-%m-%d}-" + (f"before-MD{before_md}" if before_md is not None else "knockouts")
