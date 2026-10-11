@@ -1,0 +1,9 @@
+model/.venv/
+data/raw/
+node_modules/
+dist/
+__pycache__/
+*.egg-info/
+.superpowers/
+test-results/
+playwright-report/

@@ -1,0 +1,495 @@
+[
+ {
+  "id": "2049556",
+  "status": "FINISHED",
+  "kickOffTime": {
+   "date": "2026-09-08",
+   "dateTime": "2026-09-08T16:45:00Z",
+   "utcOffsetInHours": 2
+  },
+  "score": {
+   "regular": {
+    "away": 3,
+    "home": 2
+   },
+   "total": {
+    "away": 3,
+    "home": 2
+   }
+  },
+  "round": {
+   "metaData": {
+    "name": "League Phase",
+    "type": "GROUP_STANDINGS"
+   },
+   "phase": "TOURNAMENT",
+   "id": "2002239"
+  },
+  "matchday": {
+   "competitionId": "1",
+   "dateFrom": "2026-09-08T06:00:00+0000",
+   "dateTo": "2026-09-10T21:59:59+0000",
+   "format": "REGULAR",
+   "id": "36598",
+   "longName": "Matchday 1",
+   "name": "MD1",
+   "phase": "TOURNAMENT",
+   "roundId": "2002239",
+   "seasonYear": "2027",
+   "sequenceNumber": "1",
+   "translations": {
+    "longName": {
+     "EN": "Matchday 1",
+     "FR": "Journée 1",
+     "DE": "Spieltag 1",
+     "ES": "Jornada 1",
+     "PT": "Jornada 1",
+     "IT": "Giornata 1",
+     "RU": "Тур 1",
+     "ZH": "比赛日 1",
+     "AR": "الجولة 1"
+    },
+    "name": {
+     "EN": "MD 1",
+     "FR": "J 1",
+     "DE": "ST 1",
+     "ES": "JOR 1",
+     "PT": "J 1",
+     "IT": "G 1",
+     "RU": "Тур 1",
+     "ZH": "比赛日 1",
+     "AR": "MD 1"
+    }
+   },
+   "type": "MATCHDAY"
+  },
+  "homeTeam": {
+   "id": "50043",
+   "internationalName": "Club Brugge",
+   "countryCode": "BEL",
+   "teamCode": "BRU",
+   "translations": {
+    "displayOfficialName": {
+     "EN": "Club Brugge KV",
+     "FR": "Club Brugge KV",
+     "DE": "Club Brugge KV",
+     "ES": "Club Brugge KV",
+     "PT": "Club Brugge KV",
+     "IT": "Club Brugge KV",
+     "RU": "Брюгге",
+     "ZH": "布鲁日",
+     "AR": "كلوب بروج"
+    }
+   }
+  },
+  "awayTeam": {
+   "id": "52683",
+   "internationalName": "Aston Villa",
+   "countryCode": "ENG",
+   "teamCode": "AVL",
+   "translations": {
+    "displayOfficialName": {
+     "EN": "Aston Villa",
+     "FR": "Aston Villa",
+     "DE": "Aston Villa",
+     "ES": "Aston Villa",
+     "PT": "Aston Villa",
+     "IT": "Aston Villa",
+     "RU": "Астон Вилла",
+     "ZH": "阿斯顿维拉",
+     "AR": "أستون فيلا"
+    }
+   }
+  },
+  "seasonYear": "2027",
+  "type": "GROUP_STAGE",
+  "winner": {
+   "match": {
+    "reason": "WIN_REGULAR",
+    "team": {
+     "associationId": "200039",
+     "associationLogoUrl": "https://img.uefa.com/imgml/uefacom/elements/logos/ma/ENG.svg",
+     "bigLogoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52683.png",
+     "confederationType": "UEFA",
+     "countryCode": "ENG",
+     "id": "52683",
+     "idProvider": "FAME",
+     "internationalName": "Aston Villa",
+     "isPlaceHolder": false,
+     "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/70x70/52683.png",
+     "mediumLogoUrl": "https://img.uefa.com/imgml/TP/teams/logos/240x240/52683.png",
+     "organizationId": "252683",
+     "teamCode": "AVL",
+     "teamTypeDetail": "DOMESTIC_MEN_TEAM_A",
+     "translations": {
+      "countryName": {
+       "EN": "England",
+       "FR": "Angleterre",
+       "DE": "England",
+       "ES": "Inglaterra",
+       "PT": "Inglaterra",
+       "IT": "Inghilterra",
+       "RU": "Англия",
+       "ZH": "英格兰",
+       "AR": "إنجلترا"
+      },
+      "displayName": {
+       "EN": "Aston Villa",
+       "FR": "Aston Villa",
+       "DE": "Aston Villa",
+       "ES": "Aston Villa",
+       "PT": "Aston Villa",
+       "IT": "Aston Villa",
+       "RU": "Астон Вилла",
+       "ZH": "阿斯顿维拉",
+       "AR": "أستون فيلا"
+      },
+      "displayOfficialName": {
+       "EN": "Aston Villa",
+       "FR": "Aston Villa",
+       "DE": "Aston Villa",
+       "ES": "Aston Villa",
+       "PT": "Aston Villa",
+       "IT": "Aston Villa",
+       "RU": "Астон Вилла",
+       "ZH": "阿斯顿维拉",
+       "AR": "أستون فيلا"
+      },
+      "displayTeamCode": {
+       "EN": "AVL",
+       "FR": "AVL",
+       "DE": "AVL",
+       "ES": "AVL",
+       "PT": "AVL",
+       "IT": "AVL",
+       "RU": "AVL",
+       "ZH": "AVL",
+       "AR": "AVL"
+      },
+      "shortName": {
+       "EN": "Aston Villa",
+       "FR": "Aston Villa",
+       "DE": "Aston Villa",
+       "ES": "Aston Villa",
+       "PT": "Aston Villa",
+       "IT": "Aston Villa",
+       "RU": "Астон Вилла",
+       "ZH": "Villa",
+       "AR": "أستون فيلا"
+      }
+     },
+     "typeIsNational": false,
+     "typeTeam": "DOMESTIC"
+    }
+   }
+  }
+ },
+ {
+  "id": "2049577",
+  "status": "UPCOMING",
+  "kickOffTime": {
+   "date": "2026-10-13",
+   "dateTime": "2026-10-13T16:45:00Z",
+   "utcOffsetInHours": 2
+  },
+  "round": {
+   "metaData": {
+    "name": "League Phase",
+    "type": "GROUP_STANDINGS"
+   },
+   "phase": "TOURNAMENT",
+   "id": "2002239"
+  },
+  "matchday": {
+   "competitionId": "1",
+   "dateFrom": "2026-10-13T06:00:00+0000",
+   "dateTo": "2026-10-14T21:59:59+0000",
+   "format": "REGULAR",
+   "id": "36599",
+   "longName": "Matchday 2",
+   "name": "MD2",
+   "phase": "TOURNAMENT",
+   "roundId": "2002239",
+   "seasonYear": "2027",
+   "sequenceNumber": "2",
+   "translations": {
+    "longName": {
+     "EN": "Matchday 2",
+     "FR": "Journée 2",
+     "DE": "Spieltag 2",
+     "ES": "Jornada 2",
+     "PT": "Jornada 2",
+     "IT": "Giornata 2",
+     "RU": "Тур 2",
+     "ZH": "比赛日 2",
+     "AR": "الجولة 2"
+    },
+    "name": {
+     "EN": "MD 2",
+     "FR": "J 2",
+     "DE": "ST 2",
+     "ES": "JOR 2",
+     "PT": "J 2",
+     "IT": "G 2",
+     "RU": "Тур 2",
+     "ZH": "比赛日 2",
+     "AR": "MD 2"
+    }
+   },
+   "type": "MATCHDAY"
+  },
+  "homeTeam": {
+   "id": "52277",
+   "internationalName": "Lens",
+   "countryCode": "FRA",
+   "teamCode": "LEN",
+   "translations": {
+    "displayOfficialName": {
+     "EN": "RC Lens",
+     "FR": "RC Lens",
+     "DE": "RC Lens",
+     "ES": "RC Lens",
+     "PT": "RC Lens",
+     "IT": "RC Lens",
+     "RU": "Ланс",
+     "ZH": "朗斯",
+     "AR": "لانس"
+    }
+   }
+  },
+  "awayTeam": {
+   "id": "50149",
+   "internationalName": "Sporting CP",
+   "countryCode": "POR",
+   "teamCode": "SPO",
+   "translations": {
+    "displayOfficialName": {
+     "EN": "Sporting Clube de Portugal",
+     "FR": "Sporting Clube de Portugal",
+     "DE": "Sporting Clube de Portugal",
+     "ES": "Sporting Clube de Portugal",
+     "PT": "Sporting Clube de Portugal",
+     "IT": "Sporting Clube de Portugal",
+     "RU": "Спортинг",
+     "ZH": "葡萄牙体育",
+     "AR": "سبورتنج لشبونة"
+    }
+   }
+  },
+  "seasonYear": "2027",
+  "type": "GROUP_STAGE"
+ },
+ {
+  "id": "2047742",
+  "status": "FINISHED",
+  "kickOffTime": {
+   "date": "2026-05-30",
+   "dateTime": "2026-05-30T16:00:00Z",
+   "utcOffsetInHours": 2
+  },
+  "score": {
+   "penalty": {
+    "away": 3,
+    "home": 4
+   },
+   "regular": {
+    "away": 1,
+    "home": 1
+   },
+   "total": {
+    "away": 1,
+    "home": 1
+   }
+  },
+  "round": {
+   "metaData": {
+    "name": "Final",
+    "type": "FINAL"
+   },
+   "phase": "TOURNAMENT",
+   "id": "2002115"
+  },
+  "matchday": {
+   "competitionId": "1",
+   "dateFrom": "2026-05-30T06:00:00+0000",
+   "dateTo": "2026-05-30T21:59:59+0000",
+   "format": "EXTRA_TIME_WITH_PENALTIES",
+   "id": "36271",
+   "longName": "Matchday 17",
+   "name": "MD17",
+   "phase": "TOURNAMENT",
+   "roundId": "2002115",
+   "seasonYear": "2026",
+   "sequenceNumber": "1",
+   "translations": {
+    "longName": {
+     "EN": "Matchday 17",
+     "FR": "Journée 17",
+     "DE": "Spieltag 17",
+     "ES": "Jornada 17",
+     "PT": "Jornada 17",
+     "IT": "Giornata 17",
+     "RU": "Тур 17",
+     "ZH": "比赛日 17",
+     "AR": "الجولة 17"
+    },
+    "name": {
+     "EN": "MD 17",
+     "FR": "J 17",
+     "DE": "ST 17",
+     "ES": "JOR 17",
+     "PT": "J 17",
+     "IT": "G 17",
+     "RU": "Тур 17",
+     "ZH": "比赛日 17",
+     "AR": "MD 17"
+    }
+   },
+   "type": "FINAL"
+  },
+  "homeTeam": {
+   "id": "52747",
+   "internationalName": "Paris",
+   "countryCode": "FRA",
+   "teamCode": "PSG",
+   "translations": {
+    "displayOfficialName": {
+     "EN": "Paris Saint-Germain",
+     "FR": "Paris Saint-Germain",
+     "DE": "Paris Saint-Germain",
+     "ES": "Paris Saint-Germain",
+     "PT": "Paris Saint-Germain",
+     "IT": "Paris Saint-Germain",
+     "RU": "Пари Сен-Жермен",
+     "ZH": "巴黎圣日耳曼",
+     "AR": "باريس سان جيرمان"
+    }
+   }
+  },
+  "awayTeam": {
+   "id": "52280",
+   "internationalName": "Arsenal",
+   "countryCode": "ENG",
+   "teamCode": "ARS",
+   "translations": {
+    "displayOfficialName": {
+     "EN": "Arsenal FC",
+     "FR": "Arsenal FC",
+     "DE": "Arsenal FC",
+     "ES": "Arsenal FC",
+     "PT": "Arsenal FC",
+     "IT": "Arsenal FC",
+     "RU": "Арсенал",
+     "ZH": "阿森纳",
+     "AR": "آرسنال"
+    }
+   }
+  },
+  "seasonYear": "2026",
+  "type": "SINGLE",
+  "winner": {
+   "match": {
+    "reason": "WIN_ON_PENALTIES",
+    "team": {
+     "associationId": "200043",
+     "associationLogoUrl": "https://img.uefa.com/imgml/uefacom/elements/logos/ma/FRA.svg",
+     "bigLogoUrl": "https://img.uefa.com/imgml/TP/teams/logos/700x700/52747.png",
+     "confederationType": "UEFA",
+     "countryCode": "FRA",
+     "id": "52747",
+     "idProvider": "FAME",
+     "internationalName": "Paris",
+     "isPlaceHolder": false,
+     "logoUrl": "https://img.uefa.com/imgml/TP/teams/logos/70x70/52747.png",
+     "mediumLogoUrl": "https://img.uefa.com/imgml/TP/teams/logos/240x240/52747.png",
+     "organizationId": "252747",
+     "teamCode": "PSG",
+     "teamTypeDetail": "DOMESTIC_MEN_TEAM_A",
+     "translations": {
+      "countryName": {
+       "EN": "France",
+       "FR": "France",
+       "DE": "Frankreich",
+       "ES": "Francia",
+       "PT": "França",
+       "IT": "Francia",
+       "RU": "Франция",
+       "ZH": "法国",
+       "AR": "فرنسا"
+      },
+      "displayName": {
+       "EN": "Paris",
+       "FR": "Paris",
+       "DE": "Paris",
+       "ES": "Paris",
+       "PT": "Paris",
+       "IT": "Paris",
+       "RU": "ПСЖ",
+       "ZH": "巴黎圣日耳曼",
+       "AR": "باريس"
+      },
+      "displayOfficialName": {
+       "EN": "Paris Saint-Germain",
+       "FR": "Paris Saint-Germain",
+       "DE": "Paris Saint-Germain",
+       "ES": "Paris Saint-Germain",
+       "PT": "Paris Saint-Germain",
+       "IT": "Paris Saint-Germain",
+       "RU": "Пари Сен-Жермен",
+       "ZH": "巴黎圣日耳曼",
+       "AR": "باريس سان جيرمان"
+      },
+      "displayTeamCode": {
+       "EN": "PSG",
+       "FR": "PSG",
+       "DE": "PSG",
+       "ES": "PSG",
+       "PT": "PSG",
+       "IT": "PSG",
+       "RU": "PSG",
+       "ZH": "PSG",
+       "AR": "PSG"
+      },
+      "shortName": {
+       "EN": "Paris",
+       "FR": "Paris",
+       "DE": "Paris",
+       "ES": "Paris",
+       "PT": "Paris",
+       "IT": "Paris",
+       "RU": "ПСЖ",
+       "ZH": "Paris",
+       "AR": "باريس"
+      }
+     },
+     "typeIsNational": false,
+     "typeTeam": "DOMESTIC"
+    },
+    "translations": {
+     "reasonText": {
+      "FR": "Paris: victoire aux tirs au but",
+      "IT": "Paris vince ai rigori",
+      "ES": "Paris gana en los penaltis",
+      "AR": " فاز باريس بركلات الترجيح",
+      "PT": "Paris vence nos penalties",
+      "RU": "ПСЖ побеждает по пенальти",
+      "EN": "Paris win on penalties",
+      "ZH": "巴黎圣日耳曼 点球大战取胜",
+      "DE": "Paris gewinnt im Elfmeterschießen"
+     },
+     "reasonTextAbbr": {
+      "FR": "Paris: victoire aux t.a.b.\n",
+      "IT": "Paris dcr",
+      "ES": "Paris gana en penaltis",
+      "AR": "تأهل باريس",
+      "PT": "Paris ap",
+      "RU": "ПСЖ побеждает по пенальти",
+      "EN": "Paris ap",
+      "ZH": "巴黎圣日耳曼 ap",
+      "DE": "Paris i.E."
+     }
+    }
+   }
+  }
+ }
+]

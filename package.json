@@ -1,0 +1,11 @@
+{
+  "name": "cutline",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "build": "pnpm -r build"
+  },
+  "packageManager": "pnpm@11.3.0"
+}
