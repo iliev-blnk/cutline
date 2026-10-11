@@ -61,3 +61,16 @@ def test_tune_grid_is_fixed():
 def test_grid_extension_is_lambda_team_edge_only():
     assert sorted({g.lambda_team for g in GRID_EXT}) == [10, 30]
     assert {g.xg_blend for g in GRID_EXT} == {0}
+
+
+def test_elo_model_json_covers_requested_clubs():
+    from datetime import datetime, timezone
+
+    from cutline.elo import elo_model_json
+
+    rows = [dict(kickoff_utc=f"2025-0{1 + i % 8}-01T15:00:00Z", home_id="A" if i % 2 else "B", away_id="B" if i % 2 else "A",
+                 home_goals=i % 3, away_goals=1) for i in range(40)]
+    js = elo_model_json(df_of(rows), datetime(2026, 1, 1, tzinfo=timezone.utc), {"A": {"name": "A"}, "B": {"name": "B"}, "C": {"name": "C"}})
+    assert set(js["clubs"]) == {"A", "B", "C"}
+    assert js["clubs"]["C"]["att"] == js["clubs"]["C"]["def"]
+    assert all(c["sd_att"] == 0 for c in js["clubs"].values())

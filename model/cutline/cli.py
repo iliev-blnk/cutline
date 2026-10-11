@@ -54,8 +54,9 @@ def cmd_snapshot(args: argparse.Namespace) -> int:
     from datetime import datetime, timezone
     from pathlib import Path
 
+    from .elo import elo_model_json
     from .fit import DEFAULT, TUNED, fit
-    from .gate import gate
+    from .gate import gate, list_snapshots
     from .matches import CURRENT, DATA, load_matches
 
     root = DATA.parent
@@ -63,7 +64,7 @@ def cmd_snapshot(args: argparse.Namespace) -> int:
     pred.mkdir(parents=True, exist_ok=True)
     season_path = DATA / f"season-{CURRENT}.json"
     season = json.loads(season_path.read_text())
-    snaps = sorted(p for p in pred.glob("*-before-MD*.json") if not p.name.endswith(".model.json"))
+    snaps = list_snapshots(pred)
     last = json.loads(snaps[-1].read_text()) if snaps else None
     now = datetime.now(timezone.utc)
     d = gate(season, last, now)
@@ -71,14 +72,17 @@ def cmd_snapshot(args: argparse.Namespace) -> int:
         print(f"skip: {d.reason}")
         return 0
     hyper = TUNED or DEFAULT
-    model = fit(load_matches(), now, hyper)
+    df = load_matches()
+    model = fit(df, now, hyper)
     stem = f"{now:%Y-%m-%d}-before-MD{d.before_md}"
     model_path = pred / f"{stem}.model.json"
     out_path = pred / f"{stem}.json"
     model_path.write_text(json.dumps(model.to_json(), indent=1, ensure_ascii=False))
+    elo_path = pred / f"{stem}.elo.json"
+    elo_path.write_text(json.dumps(elo_model_json(df, now, season["clubs"]), indent=1, ensure_ascii=False))
     cmd = ["pnpm", "--dir", str(root / "sim"), "exec", "tsx", "src/cli.ts", "snapshot",
            "--model", str(model_path), "--season", str(season_path), "--seed", f"{now:%Y%m%d}",
-           "--n", str(args.n), "--out", str(out_path)]
+           "--n", str(args.n), "--out", str(out_path), "--elo-model", str(elo_path)]
     if TUNED is None:
         cmd += ["--untuned", "--note", "default hyperparameters, not yet tuned"]
     for n in d.notes + (["forced: " + d.reason] if not d.ok else []):

@@ -61,3 +61,18 @@ def test_stale_unfinished_does_not_block():
 def test_before_md():
     d = gate(season(), {"finished": [f"a{i}" for i in range(18)]}, NOW)
     assert d.ok and d.before_md == 3
+
+
+def test_list_snapshots_ignores_model_and_elo_files(tmp_path):
+    from cutline.gate import list_snapshots
+
+    for n in ("2026-10-12-before-MD2.json", "2026-10-12-before-MD2.model.json", "2026-10-19-before-MD3.elo.json",
+              "2026-10-19-before-MD3.json", "notes.json"):
+        (tmp_path / n).write_text("{}")
+    assert [p.name for p in list_snapshots(tmp_path)] == ["2026-10-12-before-MD2.json", "2026-10-19-before-MD3.json"]
+
+
+def test_blocked_decision_still_reports_next_matchday():
+    s = season()
+    d = gate(s, {"finished": finished(s)}, NOW)
+    assert not d.ok and d.before_md == 3

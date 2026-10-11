@@ -14,6 +14,7 @@ function snapshot(argv: string[]): void {
       out: { type: "string" },
       untuned: { type: "boolean", default: false },
       note: { type: "string", multiple: true, default: [] },
+      "elo-model": { type: "string" },
     },
   });
   if (!values.model || !values.season || !values.seed || !values.out) {
@@ -27,6 +28,16 @@ function snapshot(argv: string[]): void {
   const beforeMd = open.length ? Math.min(...open.map((f) => f.md)) : null;
   const t = performance.now();
   const out = runSeason({ model, season, forced: new Map(), n, seed });
+  let baseline: unknown = undefined;
+  if (values["elo-model"]) {
+    const elo: ModelJson = JSON.parse(readFileSync(values["elo-model"], "utf8"));
+    const b = runSeason({ model: elo, season, forced: new Map(), n, seed });
+    baseline = {
+      kind: "elo",
+      fixtures: b.fixtures,
+      clubs: Object.fromEntries(Object.entries(b.clubs).map(([c, o]) => [c, { top8: o.top8, mid: o.mid, out: o.out, win: o.win }])),
+    };
+  }
   const snap = {
     generatedAt: new Date().toISOString(),
     seasonYear: season.seasonYear,
@@ -38,6 +49,7 @@ function snapshot(argv: string[]): void {
     notes: values.note,
     finished,
     ...out,
+    ...(baseline ? { baseline } : {}),
   };
   writeFileSync(values.out, JSON.stringify(snap));
   console.log(`snapshot before MD${beforeMd}: ${n} seasons in ${((performance.now() - t) / 1000).toFixed(1)} s -> ${values.out}`);

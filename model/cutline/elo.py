@@ -80,3 +80,20 @@ def fit_elo_goals(diffs: np.ndarray, hg: np.ndarray, ag: np.ndarray, home_adv: n
 
     res = minimize(nll, np.array([math.log(1.3), 0.5, 0.2]), jac=True, method="L-BFGS-B")
     return EloGoals(*map(float, res.x))
+
+
+def elo_model_json(df: pd.DataFrame, cutoff, clubs: dict[str, dict], home: float = 60) -> dict:
+    """Elo ratings + goals regression (last two years) from matches before cutoff, as a ModelJson for the sim."""
+    iso = cutoff.strftime("%Y-%m-%dT%H:%M:%SZ")
+    past = df[df["kickoff_utc"] < iso]
+    ratings, diffs = elo_history(past, home=home)
+    fin = past[(past["status"] == "FINISHED") & past["home_goals"].notna()].sort_values(["kickoff_utc", "match_id"])
+    two = cutoff.replace(year=cutoff.year - 2).strftime("%Y-%m-%dT%H:%M:%SZ")
+    recent = (fin["kickoff_utc"] >= two).to_numpy().copy()
+    if recent.sum() < 100:
+        recent[:] = True
+    eg = fit_elo_goals(diffs[recent], fin["home_goals"].to_numpy()[recent], fin["away_goals"].to_numpy()[recent],
+                       (~fin["neutral"].astype(bool)).to_numpy()[recent], home=home)
+    js = eg.to_model_json(ratings, clubs)
+    js["cutoff"] = iso
+    return js
