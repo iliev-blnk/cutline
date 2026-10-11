@@ -1,3 +1,5 @@
 packages:
   - sim
   - site
+allowBuilds:
+  esbuild: true

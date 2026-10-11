@@ -1,0 +1,1629 @@
+{
+ "seasonYear": 2026,
+ "clubs": {
+  "50062": {
+   "name": "PSV",
+   "country": "NED"
+  },
+  "64125": {
+   "name": "Union SG",
+   "country": "BEL"
+  },
+  "50125": {
+   "name": "Athletic Club",
+   "country": "ESP"
+  },
+  "52280": {
+   "name": "Arsenal",
+   "country": "ENG"
+  },
+  "50051": {
+   "name": "Real Madrid",
+   "country": "ESP"
+  },
+  "52748": {
+   "name": "Marseille",
+   "country": "FRA"
+  },
+  "50147": {
+   "name": "Benfica",
+   "country": "POR"
+  },
+  "60609": {
+   "name": "Qarabağ",
+   "country": "AZE"
+  },
+  "50139": {
+   "name": "Juventus",
+   "country": "ITA"
+  },
+  "52758": {
+   "name": "B. Dortmund",
+   "country": "GER"
+  },
+  "1652": {
+   "name": "Tottenham",
+   "country": "ENG"
+  },
+  "70691": {
+   "name": "Villarreal",
+   "country": "ESP"
+  },
+  "2610": {
+   "name": "Olympiacos",
+   "country": "GRE"
+  },
+  "2609532": {
+   "name": "Pafos",
+   "country": "CYP"
+  },
+  "52498": {
+   "name": "Slavia Praha",
+   "country": "CZE"
+  },
+  "59333": {
+   "name": "Bodø/Glimt",
+   "country": "NOR"
+  },
+  "52747": {
+   "name": "Paris",
+   "country": "FRA"
+  },
+  "52816": {
+   "name": "Atalanta",
+   "country": "ITA"
+  },
+  "50037": {
+   "name": "Bayern München",
+   "country": "GER"
+  },
+  "52914": {
+   "name": "Chelsea",
+   "country": "ENG"
+  },
+  "7889": {
+   "name": "Liverpool",
+   "country": "ENG"
+  },
+  "50124": {
+   "name": "Atleti",
+   "country": "ESP"
+  },
+  "50143": {
+   "name": "Ajax",
+   "country": "NED"
+  },
+  "50138": {
+   "name": "Inter",
+   "country": "ITA"
+  },
+  "50043": {
+   "name": "Club Brugge",
+   "country": "BEL"
+  },
+  "50023": {
+   "name": "Monaco",
+   "country": "FRA"
+  },
+  "52709": {
+   "name": "Copenhagen",
+   "country": "DEN"
+  },
+  "50109": {
+   "name": "Leverkusen",
+   "country": "GER"
+  },
+  "52919": {
+   "name": "Man City",
+   "country": "ENG"
+  },
+  "50136": {
+   "name": "Napoli",
+   "country": "ITA"
+  },
+  "50072": {
+   "name": "Frankfurt",
+   "country": "GER"
+  },
+  "50067": {
+   "name": "Galatasaray",
+   "country": "TUR"
+  },
+  "50149": {
+   "name": "Sporting CP",
+   "country": "POR"
+  },
+  "79970": {
+   "name": "Kairat Almaty",
+   "country": "KAZ"
+  },
+  "59324": {
+   "name": "Newcastle",
+   "country": "ENG"
+  },
+  "50080": {
+   "name": "Barcelona",
+   "country": "ESP"
+  }
+ },
+ "fixtures": [
+  {
+   "id": "2045907",
+   "md": 1,
+   "home": "50062",
+   "away": "64125",
+   "kickoff": "2025-09-16T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 3
+  },
+  {
+   "id": "2045908",
+   "md": 1,
+   "home": "50125",
+   "away": "52280",
+   "kickoff": "2025-09-16T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 2
+  },
+  {
+   "id": "2045903",
+   "md": 1,
+   "home": "50051",
+   "away": "52748",
+   "kickoff": "2025-09-16T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2045904",
+   "md": 1,
+   "home": "50147",
+   "away": "60609",
+   "kickoff": "2025-09-16T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "id": "2045905",
+   "md": 1,
+   "home": "50139",
+   "away": "52758",
+   "kickoff": "2025-09-16T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 4
+  },
+  {
+   "id": "2045906",
+   "md": 1,
+   "home": "1652",
+   "away": "70691",
+   "kickoff": "2025-09-16T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
+  },
+  {
+   "id": "2045913",
+   "md": 1,
+   "home": "2610",
+   "away": "2609532",
+   "kickoff": "2025-09-17T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 0
+  },
+  {
+   "id": "2045914",
+   "md": 1,
+   "home": "52498",
+   "away": "59333",
+   "kickoff": "2025-09-17T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "id": "2045909",
+   "md": 1,
+   "home": "52747",
+   "away": "52816",
+   "kickoff": "2025-09-17T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 0
+  },
+  {
+   "id": "2045910",
+   "md": 1,
+   "home": "50037",
+   "away": "52914",
+   "kickoff": "2025-09-17T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 1
+  },
+  {
+   "id": "2045911",
+   "md": 1,
+   "home": "7889",
+   "away": "50124",
+   "kickoff": "2025-09-17T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 2
+  },
+  {
+   "id": "2045912",
+   "md": 1,
+   "home": "50143",
+   "away": "50138",
+   "kickoff": "2025-09-17T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 2
+  },
+  {
+   "id": "2045917",
+   "md": 1,
+   "home": "50043",
+   "away": "50023",
+   "kickoff": "2025-09-18T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 1
+  },
+  {
+   "id": "2045919",
+   "md": 1,
+   "home": "52709",
+   "away": "50109",
+   "kickoff": "2025-09-18T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "id": "2045915",
+   "md": 1,
+   "home": "52919",
+   "away": "50136",
+   "kickoff": "2025-09-18T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2045916",
+   "md": 1,
+   "home": "50072",
+   "away": "50067",
+   "kickoff": "2025-09-18T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 5,
+   "ag": 1
+  },
+  {
+   "id": "2045918",
+   "md": 1,
+   "home": "50149",
+   "away": "79970",
+   "kickoff": "2025-09-18T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 1
+  },
+  {
+   "id": "2045920",
+   "md": 1,
+   "home": "59324",
+   "away": "50080",
+   "kickoff": "2025-09-18T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "id": "2045924",
+   "md": 2,
+   "home": "52816",
+   "away": "50043",
+   "kickoff": "2025-09-30T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2045929",
+   "md": 2,
+   "home": "79970",
+   "away": "50051",
+   "kickoff": "2025-09-30T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 5
+  },
+  {
+   "id": "2045921",
+   "md": 2,
+   "home": "50138",
+   "away": "52498",
+   "kickoff": "2025-09-30T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 0
+  },
+  {
+   "id": "2045922",
+   "md": 2,
+   "home": "52914",
+   "away": "50147",
+   "kickoff": "2025-09-30T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
+  },
+  {
+   "id": "2045923",
+   "md": 2,
+   "home": "50124",
+   "away": "50072",
+   "kickoff": "2025-09-30T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 5,
+   "ag": 1
+  },
+  {
+   "id": "2045925",
+   "md": 2,
+   "home": "59333",
+   "away": "1652",
+   "kickoff": "2025-09-30T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "id": "2045926",
+   "md": 2,
+   "home": "52748",
+   "away": "50143",
+   "kickoff": "2025-09-30T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 0
+  },
+  {
+   "id": "2045927",
+   "md": 2,
+   "home": "50067",
+   "away": "7889",
+   "kickoff": "2025-09-30T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
+  },
+  {
+   "id": "2045928",
+   "md": 2,
+   "home": "2609532",
+   "away": "50037",
+   "kickoff": "2025-09-30T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 5
+  },
+  {
+   "id": "2045935",
+   "md": 2,
+   "home": "64125",
+   "away": "59324",
+   "kickoff": "2025-10-01T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 4
+  },
+  {
+   "id": "2045936",
+   "md": 2,
+   "home": "60609",
+   "away": "52709",
+   "kickoff": "2025-10-01T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2045930",
+   "md": 2,
+   "home": "52280",
+   "away": "2610",
+   "kickoff": "2025-10-01T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2045931",
+   "md": 2,
+   "home": "50109",
+   "away": "50062",
+   "kickoff": "2025-10-01T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 1
+  },
+  {
+   "id": "2045932",
+   "md": 2,
+   "home": "70691",
+   "away": "50139",
+   "kickoff": "2025-10-01T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "id": "2045933",
+   "md": 2,
+   "home": "50136",
+   "away": "50149",
+   "kickoff": "2025-10-01T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2045934",
+   "md": 2,
+   "home": "50023",
+   "away": "52919",
+   "kickoff": "2025-10-01T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "id": "2045937",
+   "md": 2,
+   "home": "52758",
+   "away": "50125",
+   "kickoff": "2025-10-01T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 1
+  },
+  {
+   "id": "2045938",
+   "md": 2,
+   "home": "50080",
+   "away": "52747",
+   "kickoff": "2025-10-01T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "id": "2045939",
+   "md": 3,
+   "home": "50080",
+   "away": "2610",
+   "kickoff": "2025-10-21T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 6,
+   "ag": 1
+  },
+  {
+   "id": "2045947",
+   "md": 3,
+   "home": "79970",
+   "away": "2609532",
+   "kickoff": "2025-10-21T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 0
+  },
+  {
+   "id": "2045940",
+   "md": 3,
+   "home": "52280",
+   "away": "50124",
+   "kickoff": "2025-10-21T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 0
+  },
+  {
+   "id": "2045941",
+   "md": 3,
+   "home": "50109",
+   "away": "52747",
+   "kickoff": "2025-10-21T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 7
+  },
+  {
+   "id": "2045942",
+   "md": 3,
+   "home": "70691",
+   "away": "52919",
+   "kickoff": "2025-10-21T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 2
+  },
+  {
+   "id": "2045943",
+   "md": 3,
+   "home": "50062",
+   "away": "50136",
+   "kickoff": "2025-10-21T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 6,
+   "ag": 2
+  },
+  {
+   "id": "2045944",
+   "md": 3,
+   "home": "52709",
+   "away": "52758",
+   "kickoff": "2025-10-21T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 4
+  },
+  {
+   "id": "2045945",
+   "md": 3,
+   "home": "64125",
+   "away": "50138",
+   "kickoff": "2025-10-21T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 4
+  },
+  {
+   "id": "2045946",
+   "md": 3,
+   "home": "59324",
+   "away": "50147",
+   "kickoff": "2025-10-21T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 0
+  },
+  {
+   "id": "2045953",
+   "md": 3,
+   "home": "50067",
+   "away": "59333",
+   "kickoff": "2025-10-22T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 1
+  },
+  {
+   "id": "2045954",
+   "md": 3,
+   "home": "50125",
+   "away": "60609",
+   "kickoff": "2025-10-22T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 1
+  },
+  {
+   "id": "2045948",
+   "md": 3,
+   "home": "52914",
+   "away": "50143",
+   "kickoff": "2025-10-22T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 5,
+   "ag": 1
+  },
+  {
+   "id": "2045949",
+   "md": 3,
+   "home": "52816",
+   "away": "52498",
+   "kickoff": "2025-10-22T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 0
+  },
+  {
+   "id": "2045950",
+   "md": 3,
+   "home": "50072",
+   "away": "7889",
+   "kickoff": "2025-10-22T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 5
+  },
+  {
+   "id": "2045951",
+   "md": 3,
+   "home": "50149",
+   "away": "52748",
+   "kickoff": "2025-10-22T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2045952",
+   "md": 3,
+   "home": "50023",
+   "away": "1652",
+   "kickoff": "2025-10-22T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 0
+  },
+  {
+   "id": "2045955",
+   "md": 3,
+   "home": "50051",
+   "away": "50139",
+   "kickoff": "2025-10-22T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
+  },
+  {
+   "id": "2045956",
+   "md": 3,
+   "home": "50037",
+   "away": "50043",
+   "kickoff": "2025-10-22T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 0
+  },
+  {
+   "id": "2045962",
+   "md": 4,
+   "home": "50136",
+   "away": "50072",
+   "kickoff": "2025-11-04T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 0
+  },
+  {
+   "id": "2045964",
+   "md": 4,
+   "home": "52498",
+   "away": "52280",
+   "kickoff": "2025-11-04T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 3
+  },
+  {
+   "id": "2045957",
+   "md": 4,
+   "home": "52747",
+   "away": "50037",
+   "kickoff": "2025-11-04T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "id": "2045958",
+   "md": 4,
+   "home": "7889",
+   "away": "50051",
+   "kickoff": "2025-11-04T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
+  },
+  {
+   "id": "2045959",
+   "md": 4,
+   "home": "50124",
+   "away": "64125",
+   "kickoff": "2025-11-04T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 1
+  },
+  {
+   "id": "2045960",
+   "md": 4,
+   "home": "50139",
+   "away": "50149",
+   "kickoff": "2025-11-04T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 1
+  },
+  {
+   "id": "2045961",
+   "md": 4,
+   "home": "1652",
+   "away": "52709",
+   "kickoff": "2025-11-04T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 0
+  },
+  {
+   "id": "2045963",
+   "md": 4,
+   "home": "2610",
+   "away": "50062",
+   "kickoff": "2025-11-04T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 1
+  },
+  {
+   "id": "2045965",
+   "md": 4,
+   "home": "59333",
+   "away": "50023",
+   "kickoff": "2025-11-04T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 1
+  },
+  {
+   "id": "2045972",
+   "md": 4,
+   "home": "60609",
+   "away": "52914",
+   "kickoff": "2025-11-05T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "id": "2045974",
+   "md": 4,
+   "home": "2609532",
+   "away": "70691",
+   "kickoff": "2025-11-05T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
+  },
+  {
+   "id": "2045966",
+   "md": 4,
+   "home": "52919",
+   "away": "52758",
+   "kickoff": "2025-11-05T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 1
+  },
+  {
+   "id": "2045967",
+   "md": 4,
+   "home": "50138",
+   "away": "79970",
+   "kickoff": "2025-11-05T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2045968",
+   "md": 4,
+   "home": "50147",
+   "away": "50109",
+   "kickoff": "2025-11-05T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 1
+  },
+  {
+   "id": "2045969",
+   "md": 4,
+   "home": "50043",
+   "away": "50080",
+   "kickoff": "2025-11-05T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 3
+  },
+  {
+   "id": "2045970",
+   "md": 4,
+   "home": "50143",
+   "away": "50067",
+   "kickoff": "2025-11-05T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 3
+  },
+  {
+   "id": "2045971",
+   "md": 4,
+   "home": "52748",
+   "away": "52816",
+   "kickoff": "2025-11-05T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 1
+  },
+  {
+   "id": "2045973",
+   "md": 4,
+   "home": "59324",
+   "away": "50125",
+   "kickoff": "2025-11-05T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2045978",
+   "md": 5,
+   "home": "50143",
+   "away": "50147",
+   "kickoff": "2025-11-25T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 2
+  },
+  {
+   "id": "2045983",
+   "md": 5,
+   "home": "50067",
+   "away": "64125",
+   "kickoff": "2025-11-25T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 1
+  },
+  {
+   "id": "2045975",
+   "md": 5,
+   "home": "52919",
+   "away": "50109",
+   "kickoff": "2025-11-25T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 2
+  },
+  {
+   "id": "2045976",
+   "md": 5,
+   "home": "52914",
+   "away": "50080",
+   "kickoff": "2025-11-25T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 0
+  },
+  {
+   "id": "2045977",
+   "md": 5,
+   "home": "52758",
+   "away": "70691",
+   "kickoff": "2025-11-25T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 0
+  },
+  {
+   "id": "2045979",
+   "md": 5,
+   "home": "50136",
+   "away": "60609",
+   "kickoff": "2025-11-25T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2045980",
+   "md": 5,
+   "home": "52498",
+   "away": "50125",
+   "kickoff": "2025-11-25T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 0
+  },
+  {
+   "id": "2045981",
+   "md": 5,
+   "home": "59333",
+   "away": "50139",
+   "kickoff": "2025-11-25T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "id": "2045982",
+   "md": 5,
+   "home": "52748",
+   "away": "59324",
+   "kickoff": "2025-11-25T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2045991",
+   "md": 5,
+   "home": "52709",
+   "away": "79970",
+   "kickoff": "2025-11-26T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 2
+  },
+  {
+   "id": "2045992",
+   "md": 5,
+   "home": "2609532",
+   "away": "50023",
+   "kickoff": "2025-11-26T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "id": "2045984",
+   "md": 5,
+   "home": "52747",
+   "away": "1652",
+   "kickoff": "2025-11-26T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 5,
+   "ag": 3
+  },
+  {
+   "id": "2045985",
+   "md": 5,
+   "home": "7889",
+   "away": "50062",
+   "kickoff": "2025-11-26T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 4
+  },
+  {
+   "id": "2045986",
+   "md": 5,
+   "home": "52280",
+   "away": "50037",
+   "kickoff": "2025-11-26T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 1
+  },
+  {
+   "id": "2045987",
+   "md": 5,
+   "home": "50124",
+   "away": "50138",
+   "kickoff": "2025-11-26T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2045988",
+   "md": 5,
+   "home": "50072",
+   "away": "52816",
+   "kickoff": "2025-11-26T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 3
+  },
+  {
+   "id": "2045989",
+   "md": 5,
+   "home": "50149",
+   "away": "50043",
+   "kickoff": "2025-11-26T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 0
+  },
+  {
+   "id": "2045990",
+   "md": 5,
+   "home": "2610",
+   "away": "50051",
+   "kickoff": "2025-11-26T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 4
+  },
+  {
+   "id": "2046001",
+   "md": 6,
+   "home": "79970",
+   "away": "2610",
+   "kickoff": "2025-12-09T15:30:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 1
+  },
+  {
+   "id": "2045993",
+   "md": 6,
+   "home": "50037",
+   "away": "50149",
+   "kickoff": "2025-12-09T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 1
+  },
+  {
+   "id": "2045994",
+   "md": 6,
+   "home": "50138",
+   "away": "7889",
+   "kickoff": "2025-12-09T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 1
+  },
+  {
+   "id": "2045995",
+   "md": 6,
+   "home": "50080",
+   "away": "50072",
+   "kickoff": "2025-12-09T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2045996",
+   "md": 6,
+   "home": "52816",
+   "away": "52914",
+   "kickoff": "2025-12-09T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2045997",
+   "md": 6,
+   "home": "1652",
+   "away": "52498",
+   "kickoff": "2025-12-09T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 0
+  },
+  {
+   "id": "2045998",
+   "md": 6,
+   "home": "50062",
+   "away": "50124",
+   "kickoff": "2025-12-09T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "id": "2045999",
+   "md": 6,
+   "home": "50023",
+   "away": "50067",
+   "kickoff": "2025-12-09T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
+  },
+  {
+   "id": "2046000",
+   "md": 6,
+   "home": "64125",
+   "away": "52748",
+   "kickoff": "2025-12-09T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "id": "2046005",
+   "md": 6,
+   "home": "70691",
+   "away": "52709",
+   "kickoff": "2025-12-10T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "id": "2046008",
+   "md": 6,
+   "home": "60609",
+   "away": "50143",
+   "kickoff": "2025-12-10T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 4
+  },
+  {
+   "id": "2046002",
+   "md": 6,
+   "home": "52758",
+   "away": "59333",
+   "kickoff": "2025-12-10T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "id": "2046003",
+   "md": 6,
+   "home": "50109",
+   "away": "59324",
+   "kickoff": "2025-12-10T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 2
+  },
+  {
+   "id": "2046004",
+   "md": 6,
+   "home": "50147",
+   "away": "50136",
+   "kickoff": "2025-12-10T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2046006",
+   "md": 6,
+   "home": "50139",
+   "away": "2609532",
+   "kickoff": "2025-12-10T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2046007",
+   "md": 6,
+   "home": "50043",
+   "away": "52280",
+   "kickoff": "2025-12-10T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 3
+  },
+  {
+   "id": "2046009",
+   "md": 6,
+   "home": "50125",
+   "away": "52747",
+   "kickoff": "2025-12-10T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 0
+  },
+  {
+   "id": "2046010",
+   "md": 6,
+   "home": "50051",
+   "away": "52919",
+   "kickoff": "2025-12-10T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "id": "2046019",
+   "md": 7,
+   "home": "79970",
+   "away": "50043",
+   "kickoff": "2026-01-20T15:30:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 4
+  },
+  {
+   "id": "2046017",
+   "md": 7,
+   "home": "59333",
+   "away": "52919",
+   "kickoff": "2026-01-20T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 1
+  },
+  {
+   "id": "2046011",
+   "md": 7,
+   "home": "50051",
+   "away": "50023",
+   "kickoff": "2026-01-20T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 6,
+   "ag": 1
+  },
+  {
+   "id": "2046012",
+   "md": 7,
+   "home": "50138",
+   "away": "52280",
+   "kickoff": "2026-01-20T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 3
+  },
+  {
+   "id": "2046013",
+   "md": 7,
+   "home": "70691",
+   "away": "50143",
+   "kickoff": "2026-01-20T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "id": "2046014",
+   "md": 7,
+   "home": "1652",
+   "away": "52758",
+   "kickoff": "2026-01-20T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2046015",
+   "md": 7,
+   "home": "50149",
+   "away": "52747",
+   "kickoff": "2026-01-20T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2046016",
+   "md": 7,
+   "home": "2610",
+   "away": "50109",
+   "kickoff": "2026-01-20T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2046018",
+   "md": 7,
+   "home": "52709",
+   "away": "50136",
+   "kickoff": "2026-01-20T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 1
+  },
+  {
+   "id": "2046025",
+   "md": 7,
+   "home": "50067",
+   "away": "50124",
+   "kickoff": "2026-01-21T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 1
+  },
+  {
+   "id": "2046026",
+   "md": 7,
+   "home": "60609",
+   "away": "50072",
+   "kickoff": "2026-01-21T17:45:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 2
+  },
+  {
+   "id": "2046020",
+   "md": 7,
+   "home": "52914",
+   "away": "2609532",
+   "kickoff": "2026-01-21T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
+  },
+  {
+   "id": "2046021",
+   "md": 7,
+   "home": "52816",
+   "away": "50125",
+   "kickoff": "2026-01-21T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "id": "2046022",
+   "md": 7,
+   "home": "50139",
+   "away": "50147",
+   "kickoff": "2026-01-21T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2046023",
+   "md": 7,
+   "home": "52498",
+   "away": "50080",
+   "kickoff": "2026-01-21T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 4
+  },
+  {
+   "id": "2046024",
+   "md": 7,
+   "home": "52748",
+   "away": "7889",
+   "kickoff": "2026-01-21T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 3
+  },
+  {
+   "id": "2046027",
+   "md": 7,
+   "home": "59324",
+   "away": "50062",
+   "kickoff": "2026-01-21T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 0
+  },
+  {
+   "id": "2046028",
+   "md": 7,
+   "home": "50037",
+   "away": "64125",
+   "kickoff": "2026-01-21T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2046029",
+   "md": 8,
+   "home": "52747",
+   "away": "59324",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 1
+  },
+  {
+   "id": "2046030",
+   "md": 8,
+   "home": "52919",
+   "away": "50067",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
+  },
+  {
+   "id": "2046031",
+   "md": 8,
+   "home": "7889",
+   "away": "60609",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 6,
+   "ag": 0
+  },
+  {
+   "id": "2046032",
+   "md": 8,
+   "home": "52758",
+   "away": "50138",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 2
+  },
+  {
+   "id": "2046033",
+   "md": 8,
+   "home": "50080",
+   "away": "52709",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 1
+  },
+  {
+   "id": "2046034",
+   "md": 8,
+   "home": "52280",
+   "away": "79970",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 2
+  },
+  {
+   "id": "2046035",
+   "md": 8,
+   "home": "50109",
+   "away": "70691",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 0
+  },
+  {
+   "id": "2046036",
+   "md": 8,
+   "home": "50124",
+   "away": "59333",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "id": "2046037",
+   "md": 8,
+   "home": "50147",
+   "away": "50051",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 2
+  },
+  {
+   "id": "2046038",
+   "md": 8,
+   "home": "50072",
+   "away": "1652",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 2
+  },
+  {
+   "id": "2046039",
+   "md": 8,
+   "home": "50043",
+   "away": "52748",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 0
+  },
+  {
+   "id": "2046040",
+   "md": 8,
+   "home": "50062",
+   "away": "50037",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "id": "2046041",
+   "md": 8,
+   "home": "50143",
+   "away": "2610",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 2
+  },
+  {
+   "id": "2046042",
+   "md": 8,
+   "home": "50136",
+   "away": "52914",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "id": "2046043",
+   "md": 8,
+   "home": "50023",
+   "away": "50139",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 0
+  },
+  {
+   "id": "2046044",
+   "md": 8,
+   "home": "64125",
+   "away": "52816",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
+  },
+  {
+   "id": "2046045",
+   "md": 8,
+   "home": "50125",
+   "away": "50149",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "id": "2046046",
+   "md": 8,
+   "home": "2609532",
+   "away": "52498",
+   "kickoff": "2026-01-28T20:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 1
+  }
+ ],
+ "official": [
+  "52280",
+  "50037",
+  "7889",
+  "1652",
+  "50080",
+  "52914",
+  "50149",
+  "52919",
+  "50051",
+  "50138",
+  "52747",
+  "59324",
+  "50139",
+  "50124",
+  "52816",
+  "50109",
+  "52758",
+  "2610",
+  "50043",
+  "50067",
+  "50023",
+  "60609",
+  "59333",
+  "50147",
+  "52748",
+  "2609532",
+  "64125",
+  "50062",
+  "50125",
+  "50136",
+  "52709",
+  "50143",
+  "50072",
+  "52498",
+  "70691",
+  "79970"
+ ]
+}
