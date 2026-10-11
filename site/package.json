@@ -1,0 +1,26 @@
+{
+  "name": "@cutline/site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect": "tsx scripts/collect.ts",
+    "dev": "pnpm collect && vite",
+    "build": "pnpm collect && vite build",
+    "preview": "vite preview --port 4173 --strictPort",
+    "test": "vitest run test",
+    "e2e": "playwright test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@cutline/sim": "workspace:*"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3"
+  }
+}
