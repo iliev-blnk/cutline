@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>cutline method</title>
+    <meta name="description" content="How cutline rates clubs and simulates the Champions League." />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="prose">
+      <p><a href="./">cutline</a> — method</p>
+
+      <h2>Data</h2>
+      <p>Every UEFA club competition match since July 2021 (Champions League, Europa League, Conference League, qualifiers included), from UEFA's public match data. Every top-division match in 18 European leagues from football-data.co.uk, with closing bookmaker odds. About 32,000 matches. Clubs from leagues without domestic data (Azerbaijan, Czechia, Slovakia, Ukraine) are rated from their European matches only.</p>
+
+      <h2>Rating clubs</h2>
+      <p>Each club has an attack and a defence strength. The expected goals of a team are exp(league goal level + home advantage + its attack − the opponent's defence). Goals are Poisson with the Dixon–Coles correction for low scores, which makes 0–0 and 1–1 slightly more likely than two independent Poissons would.</p>
+      <p>Domestic leagues each have their own goal level; European matches link the leagues together. A club's strength is its country's level plus its own deviation, so a club with few matches is pulled towards its country rather than towards the European average. Recent matches count more: a match a year old has half the weight of one played today.</p>
+      <p>The fit also gives each strength a standard error. Every simulated season draws its own strengths from that uncertainty, so the probabilities include "we don't know exactly how good this club is", not only match luck.</p>
+
+      <h2>Simulating</h2>
+      <p>For each of 10,000 seasons: draw club strengths, sample a score for every unplayed league-phase match, rank the table with UEFA's tiebreakers (points, goal difference, goals, away goals, wins, away wins, then opponents' points, goal difference and goals), then play the knockout phase: the play-off, the seeded bracket, two legs with extra time and penalties, and a neutral final. The table code reproduces the official 2024-25 and 2025-26 final tables exactly from the results.</p>
+      <p>"What if" re-runs the same 10,000 seasons in your browser with the results you set fixed. It uses the same seed as the published snapshot, so with nothing set it gives exactly the published numbers.</p>
+
+      <h2>Testing it</h2>
+      <p>Settings are chosen on the 2023-24 season only. The model is then scored once on 2024-25 and 2025-26 against an Elo baseline and against bookmaker closing odds. <span id="backtest">The backtest has not been run yet; results will appear here.</span></p>
+
+      <h2>Limits</h2>
+      <p>No injuries, suspensions or transfers: the model only sees results. Penalty shoot-outs are 50/50. Two seasons in this format is a small sample for checking whether "60%" really happens 60% of the time.</p>
+
+      <p class="muted">Code and every prediction: <a href="https://github.com/iliev-blnk/cutline">github.com/iliev-blnk/cutline</a></p>
+    </main>
+  </body>
+</html>

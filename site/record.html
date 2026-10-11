@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>cutline record</title>
+    <meta name="description" content="Every cutline prediction, committed before kickoff, against what happened." />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p><a href="./">cutline</a> — record</p>
+        <p class="muted">Every snapshot is committed to the public repository before the next matchday kicks off. Below, each snapshot's forecasts for that matchday against the results. RPS = ranked probability score per match (0 is perfect; always saying 1/3 each scores about 0.22).</p>
+      </header>
+      <section id="summary"></section>
+      <section id="club"></section>
+      <section id="snapshots"></section>
+    </main>
+    <script type="module" src="/src/record.ts"></script>
+  </body>
+</html>

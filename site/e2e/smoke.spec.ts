@@ -21,3 +21,15 @@ test("forcing a result changes the home club's top-8 chance, and the hash restor
   await expect(page.locator(".fixture.forced").first()).toContainText("1–0");
   await expect(cell).not.toHaveText(before!, { timeout: 3000 });
 });
+
+test("record page lists the v0 snapshot with its MD2 fixtures", async ({ page }) => {
+  await page.goto("record.html");
+  const first = page.locator(".snapshot").first();
+  await expect(first).toContainText("before Matchday 2");
+  await expect(first.locator(".rfix")).toHaveCount(18);
+});
+
+test("method page loads", async ({ page }) => {
+  await page.goto("method.html");
+  await expect(page.locator("h1, p").first()).toContainText("cutline");
+});
