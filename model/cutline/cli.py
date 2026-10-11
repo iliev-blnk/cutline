@@ -47,6 +47,50 @@ def cmd_export_fixtures(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_snapshot(args: argparse.Namespace) -> int:
+    import json
+    import os
+    import subprocess
+    from datetime import datetime, timezone
+    from pathlib import Path
+
+    from .fit import DEFAULT, TUNED, fit
+    from .gate import gate
+    from .matches import CURRENT, DATA, load_matches
+
+    root = DATA.parent
+    pred = root / "predictions" / str(CURRENT)
+    pred.mkdir(parents=True, exist_ok=True)
+    season_path = DATA / f"season-{CURRENT}.json"
+    season = json.loads(season_path.read_text())
+    snaps = sorted(p for p in pred.glob("*-before-MD*.json") if not p.name.endswith(".model.json"))
+    last = json.loads(snaps[-1].read_text()) if snaps else None
+    now = datetime.now(timezone.utc)
+    d = gate(season, last, now)
+    if not d.ok and not args.force:
+        print(f"skip: {d.reason}")
+        return 0
+    hyper = TUNED or DEFAULT
+    model = fit(load_matches(), now, hyper)
+    stem = f"{now:%Y-%m-%d}-before-MD{d.before_md}"
+    model_path = pred / f"{stem}.model.json"
+    out_path = pred / f"{stem}.json"
+    model_path.write_text(json.dumps(model.to_json(), indent=1, ensure_ascii=False))
+    cmd = ["pnpm", "--dir", str(root / "sim"), "exec", "tsx", "src/cli.ts", "snapshot",
+           "--model", str(model_path), "--season", str(season_path), "--seed", f"{now:%Y%m%d}",
+           "--n", str(args.n), "--out", str(out_path)]
+    if TUNED is None:
+        cmd += ["--untuned", "--note", "default hyperparameters, not yet tuned"]
+    for n in d.notes + (["forced: " + d.reason] if not d.ok else []):
+        cmd += ["--note", n]
+    subprocess.run(cmd, check=True)
+    print(f"created {out_path.relative_to(root)}")
+    if os.environ.get("GITHUB_OUTPUT"):
+        with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+            f.write(f"created={out_path.relative_to(root)}\n")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="cutline")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -60,8 +104,12 @@ def main(argv: list[str] | None = None) -> int:
     f.add_argument("--xg-blend", type=float, default=0.0)
     e = sub.add_parser("export-fixtures", help="write past league phases + official tables for the sim tests")
     e.add_argument("--out-dir", default="sim/test/fixtures")
+    sn = sub.add_parser("snapshot", help="gate, fit and simulate; write predictions/<Y>/<date>-before-MD<n>.json")
+    sn.add_argument("--force", action="store_true")
+    sn.add_argument("--n", type=int, default=10000)
     args = p.parse_args(argv)
-    return {"ingest": cmd_ingest, "fit": cmd_fit, "export-fixtures": cmd_export_fixtures}[args.cmd](args)
+    return {"ingest": cmd_ingest, "fit": cmd_fit, "export-fixtures": cmd_export_fixtures,
+            "snapshot": cmd_snapshot}[args.cmd](args)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,49 @@
+name: update
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "take a snapshot even if the gate says no"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: raw-${{ github.run_id }}
+          restore-keys: raw-
+      - run: pip install -e model
+      - run: pnpm install --frozen-lockfile
+      - run: cutline ingest
+      - id: snap
+        run: cutline snapshot ${{ inputs.force && '--force' || '' }}
+      - if: steps.snap.outputs.created != ''
+        run: |
+          git config user.name "cutline-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/matches.csv.gz data/season-2027.json predictions/
+          git commit -m "Snapshot: ${{ steps.snap.outputs.created }}"
+          git push
