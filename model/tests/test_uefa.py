@@ -48,3 +48,12 @@ def test_ids_are_uefa_ids():
     (m,) = normalize_uefa([FINISHED], "UCL")
     assert m.home_id == "50043"
     assert m.away_id == "52683"
+
+
+def test_kickoff_falls_back_to_date_for_cancelled():
+    rec = copy.deepcopy(UPCOMING)
+    rec["status"] = "CANCELED"
+    rec["kickOffTime"] = {"date": "2022-03-17"}
+    (m,) = normalize_uefa([rec], "UEL")
+    assert m.kickoff_utc == "2022-03-17T00:00:00Z"
+    assert m.status == "OTHER"

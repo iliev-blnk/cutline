@@ -1,0 +1,1591 @@
+{
+ "seasonYear": 2027,
+ "clubs": {
+  "50043": {
+   "name": "Club Brugge",
+   "country": "BEL"
+  },
+  "52683": {
+   "name": "Aston Villa",
+   "country": "ENG"
+  },
+  "50129": {
+   "name": "AEK Athens",
+   "country": "GRE"
+  },
+  "63405": {
+   "name": "LASK",
+   "country": "AUT"
+  },
+  "50051": {
+   "name": "Real Madrid",
+   "country": "ESP"
+  },
+  "50138": {
+   "name": "Inter",
+   "country": "ITA"
+  },
+  "52758": {
+   "name": "B. Dortmund",
+   "country": "GER"
+  },
+  "70691": {
+   "name": "Villarreal",
+   "country": "ESP"
+  },
+  "50064": {
+   "name": "Porto",
+   "country": "POR"
+  },
+  "52919": {
+   "name": "Man City",
+   "country": "ENG"
+  },
+  "75797": {
+   "name": "Lille",
+   "country": "FRA"
+  },
+  "52265": {
+   "name": "Real Betis",
+   "country": "ESP"
+  },
+  "50080": {
+   "name": "Barcelona",
+   "country": "ESP"
+  },
+  "52749": {
+   "name": "Feyenoord",
+   "country": "NED"
+  },
+  "50107": {
+   "name": "Stuttgart",
+   "country": "GER"
+  },
+  "52319": {
+   "name": "Viking",
+   "country": "NOR"
+  },
+  "52747": {
+   "name": "Paris",
+   "country": "FRA"
+  },
+  "52797": {
+   "name": "S. Bratislava",
+   "country": "SVK"
+  },
+  "7889": {
+   "name": "Liverpool",
+   "country": "ENG"
+  },
+  "50124": {
+   "name": "Atleti",
+   "country": "ESP"
+  },
+  "50149": {
+   "name": "Sporting CP",
+   "country": "POR"
+  },
+  "50067": {
+   "name": "Galatasaray",
+   "country": "TUR"
+  },
+  "50136": {
+   "name": "Napoli",
+   "country": "ITA"
+  },
+  "52280": {
+   "name": "Arsenal",
+   "country": "ENG"
+  },
+  "50062": {
+   "name": "PSV",
+   "country": "NED"
+  },
+  "52707": {
+   "name": "Shakhtar",
+   "country": "UKR"
+  },
+  "52692": {
+   "name": "Fenerbahçe",
+   "country": "TUR"
+  },
+  "50137": {
+   "name": "Roma",
+   "country": "ITA"
+  },
+  "50037": {
+   "name": "Bayern München",
+   "country": "GER"
+  },
+  "59333": {
+   "name": "Bodø/Glimt",
+   "country": "NOR"
+  },
+  "52682": {
+   "name": "Man Utd",
+   "country": "ENG"
+  },
+  "2609356": {
+   "name": "Sabah",
+   "country": "AZE"
+  },
+  "52498": {
+   "name": "Slavia Praha",
+   "country": "CZE"
+  },
+  "52277": {
+   "name": "Lens",
+   "country": "FRA"
+  },
+  "79946": {
+   "name": "Como",
+   "country": "ITA"
+  },
+  "2603790": {
+   "name": "Leipzig",
+   "country": "GER"
+  }
+ },
+ "fixtures": [
+  {
+   "id": "2049556",
+   "md": 1,
+   "home": "50043",
+   "away": "52683",
+   "kickoff": "2026-09-08T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "id": "2049558",
+   "md": 1,
+   "home": "50129",
+   "away": "63405",
+   "kickoff": "2026-09-08T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
+  },
+  {
+   "id": "2049553",
+   "md": 1,
+   "home": "50051",
+   "away": "50138",
+   "kickoff": "2026-09-08T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2049554",
+   "md": 1,
+   "home": "52758",
+   "away": "70691",
+   "kickoff": "2026-09-08T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 2
+  },
+  {
+   "id": "2049555",
+   "md": 1,
+   "home": "50064",
+   "away": "52919",
+   "kickoff": "2026-09-08T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 2
+  },
+  {
+   "id": "2049557",
+   "md": 1,
+   "home": "75797",
+   "away": "52265",
+   "kickoff": "2026-09-08T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "id": "2049561",
+   "md": 1,
+   "home": "50080",
+   "away": "52749",
+   "kickoff": "2026-09-09T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 5,
+   "ag": 1
+  },
+  {
+   "id": "2049564",
+   "md": 1,
+   "home": "50107",
+   "away": "52319",
+   "kickoff": "2026-09-09T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 1
+  },
+  {
+   "id": "2049559",
+   "md": 1,
+   "home": "52747",
+   "away": "52797",
+   "kickoff": "2026-09-09T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 6,
+   "ag": 1
+  },
+  {
+   "id": "2049560",
+   "md": 1,
+   "home": "7889",
+   "away": "50124",
+   "kickoff": "2026-09-09T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 1
+  },
+  {
+   "id": "2049562",
+   "md": 1,
+   "home": "50149",
+   "away": "50067",
+   "kickoff": "2026-09-09T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 1
+  },
+  {
+   "id": "2049563",
+   "md": 1,
+   "home": "50136",
+   "away": "52280",
+   "kickoff": "2026-09-09T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 1
+  },
+  {
+   "id": "2049567",
+   "md": 1,
+   "home": "50062",
+   "away": "52707",
+   "kickoff": "2026-09-10T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 1
+  },
+  {
+   "id": "2049568",
+   "md": 1,
+   "home": "52692",
+   "away": "50137",
+   "kickoff": "2026-09-10T16:45:00Z",
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 1
+  },
+  {
+   "id": "2049565",
+   "md": 1,
+   "home": "50037",
+   "away": "59333",
+   "kickoff": "2026-09-10T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 5,
+   "ag": 0
+  },
+  {
+   "id": "2049566",
+   "md": 1,
+   "home": "52682",
+   "away": "2609356",
+   "kickoff": "2026-09-10T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 0
+  },
+  {
+   "id": "2049569",
+   "md": 1,
+   "home": "52498",
+   "away": "52277",
+   "kickoff": "2026-09-10T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 3
+  },
+  {
+   "id": "2049570",
+   "md": 1,
+   "home": "79946",
+   "away": "2603790",
+   "kickoff": "2026-09-10T19:00:00Z",
+   "status": "FINISHED",
+   "hg": 4,
+   "ag": 1
+  },
+  {
+   "id": "2049577",
+   "md": 2,
+   "home": "52277",
+   "away": "50149",
+   "kickoff": "2026-10-13T16:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049579",
+   "md": 2,
+   "home": "2609356",
+   "away": "52498",
+   "kickoff": "2026-10-13T16:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049571",
+   "md": 2,
+   "home": "50138",
+   "away": "50043",
+   "kickoff": "2026-10-13T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049572",
+   "md": 2,
+   "home": "52280",
+   "away": "75797",
+   "kickoff": "2026-10-13T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049573",
+   "md": 2,
+   "home": "50124",
+   "away": "52682",
+   "kickoff": "2026-10-13T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049574",
+   "md": 2,
+   "home": "2603790",
+   "away": "50062",
+   "kickoff": "2026-10-13T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049575",
+   "md": 2,
+   "home": "70691",
+   "away": "50136",
+   "kickoff": "2026-10-13T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049576",
+   "md": 2,
+   "home": "50067",
+   "away": "50080",
+   "kickoff": "2026-10-13T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049578",
+   "md": 2,
+   "home": "52319",
+   "away": "50037",
+   "kickoff": "2026-10-13T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049584",
+   "md": 2,
+   "home": "52749",
+   "away": "79946",
+   "kickoff": "2026-10-14T16:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049588",
+   "md": 2,
+   "home": "63405",
+   "away": "7889",
+   "kickoff": "2026-10-14T16:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049580",
+   "md": 2,
+   "home": "52919",
+   "away": "52747",
+   "kickoff": "2026-10-14T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049581",
+   "md": 2,
+   "home": "50137",
+   "away": "50051",
+   "kickoff": "2026-10-14T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049582",
+   "md": 2,
+   "home": "52683",
+   "away": "52692",
+   "kickoff": "2026-10-14T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049583",
+   "md": 2,
+   "home": "52265",
+   "away": "50064",
+   "kickoff": "2026-10-14T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049585",
+   "md": 2,
+   "home": "59333",
+   "away": "52758",
+   "kickoff": "2026-10-14T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049586",
+   "md": 2,
+   "home": "52707",
+   "away": "50129",
+   "kickoff": "2026-10-14T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049587",
+   "md": 2,
+   "home": "52797",
+   "away": "50107",
+   "kickoff": "2026-10-14T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049595",
+   "md": 3,
+   "home": "52692",
+   "away": "52498",
+   "kickoff": "2026-10-20T16:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049597",
+   "md": 3,
+   "home": "2609356",
+   "away": "52758",
+   "kickoff": "2026-10-20T16:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049589",
+   "md": 3,
+   "home": "52747",
+   "away": "50080",
+   "kickoff": "2026-10-20T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049590",
+   "md": 3,
+   "home": "7889",
+   "away": "70691",
+   "kickoff": "2026-10-20T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049591",
+   "md": 3,
+   "home": "52919",
+   "away": "50129",
+   "kickoff": "2026-10-20T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049592",
+   "md": 3,
+   "home": "50137",
+   "away": "52797",
+   "kickoff": "2026-10-20T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049593",
+   "md": 3,
+   "home": "50064",
+   "away": "50062",
+   "kickoff": "2026-10-20T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049594",
+   "md": 3,
+   "home": "50136",
+   "away": "59333",
+   "kickoff": "2026-10-20T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049596",
+   "md": 3,
+   "home": "50107",
+   "away": "50124",
+   "kickoff": "2026-10-20T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049605",
+   "md": 3,
+   "home": "75797",
+   "away": "50067",
+   "kickoff": "2026-10-21T16:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049606",
+   "md": 3,
+   "home": "79946",
+   "away": "52682",
+   "kickoff": "2026-10-21T16:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049598",
+   "md": 3,
+   "home": "50037",
+   "away": "52280",
+   "kickoff": "2026-10-21T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049599",
+   "md": 3,
+   "home": "50051",
+   "away": "2603790",
+   "kickoff": "2026-10-21T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049600",
+   "md": 3,
+   "home": "50138",
+   "away": "52707",
+   "kickoff": "2026-10-21T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049601",
+   "md": 3,
+   "home": "50149",
+   "away": "63405",
+   "kickoff": "2026-10-21T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049602",
+   "md": 3,
+   "home": "52683",
+   "away": "52319",
+   "kickoff": "2026-10-21T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049603",
+   "md": 3,
+   "home": "50043",
+   "away": "52277",
+   "kickoff": "2026-10-21T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049604",
+   "md": 3,
+   "home": "52265",
+   "away": "52749",
+   "kickoff": "2026-10-21T19:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049613",
+   "md": 4,
+   "home": "52707",
+   "away": "50149",
+   "kickoff": "2026-11-03T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049614",
+   "md": 4,
+   "home": "50067",
+   "away": "50107",
+   "kickoff": "2026-11-03T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049607",
+   "md": 4,
+   "home": "50080",
+   "away": "52683",
+   "kickoff": "2026-11-03T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049608",
+   "md": 4,
+   "home": "50124",
+   "away": "50037",
+   "kickoff": "2026-11-03T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049609",
+   "md": 4,
+   "home": "52682",
+   "away": "50137",
+   "kickoff": "2026-11-03T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049610",
+   "md": 4,
+   "home": "52749",
+   "away": "50138",
+   "kickoff": "2026-11-03T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049611",
+   "md": 4,
+   "home": "59333",
+   "away": "75797",
+   "kickoff": "2026-11-03T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049612",
+   "md": 4,
+   "home": "70691",
+   "away": "52747",
+   "kickoff": "2026-11-03T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049615",
+   "md": 4,
+   "home": "63405",
+   "away": "52797",
+   "kickoff": "2026-11-03T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049620",
+   "md": 4,
+   "home": "52692",
+   "away": "7889",
+   "kickoff": "2026-11-04T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049622",
+   "md": 4,
+   "home": "50129",
+   "away": "50051",
+   "kickoff": "2026-11-04T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049616",
+   "md": 4,
+   "home": "52758",
+   "away": "52265",
+   "kickoff": "2026-11-04T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049617",
+   "md": 4,
+   "home": "50064",
+   "away": "50136",
+   "kickoff": "2026-11-04T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049618",
+   "md": 4,
+   "home": "50062",
+   "away": "50043",
+   "kickoff": "2026-11-04T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049619",
+   "md": 4,
+   "home": "2603790",
+   "away": "52919",
+   "kickoff": "2026-11-04T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049621",
+   "md": 4,
+   "home": "52498",
+   "away": "52280",
+   "kickoff": "2026-11-04T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049623",
+   "md": 4,
+   "home": "52277",
+   "away": "79946",
+   "kickoff": "2026-11-04T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049624",
+   "md": 4,
+   "home": "52319",
+   "away": "2609356",
+   "kickoff": "2026-11-04T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049629",
+   "md": 5,
+   "home": "59333",
+   "away": "63405",
+   "kickoff": "2026-11-24T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049631",
+   "md": 5,
+   "home": "50067",
+   "away": "52683",
+   "kickoff": "2026-11-24T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049625",
+   "md": 5,
+   "home": "50051",
+   "away": "50062",
+   "kickoff": "2026-11-24T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049626",
+   "md": 5,
+   "home": "52919",
+   "away": "50136",
+   "kickoff": "2026-11-24T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049627",
+   "md": 5,
+   "home": "52280",
+   "away": "52758",
+   "kickoff": "2026-11-24T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049628",
+   "md": 5,
+   "home": "52749",
+   "away": "50064",
+   "kickoff": "2026-11-24T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049630",
+   "md": 5,
+   "home": "2603790",
+   "away": "52277",
+   "kickoff": "2026-11-24T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049632",
+   "md": 5,
+   "home": "52797",
+   "away": "52265",
+   "kickoff": "2026-11-24T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049633",
+   "md": 5,
+   "home": "79946",
+   "away": "50129",
+   "kickoff": "2026-11-24T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049641",
+   "md": 5,
+   "home": "52498",
+   "away": "70691",
+   "kickoff": "2026-11-25T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049642",
+   "md": 5,
+   "home": "2609356",
+   "away": "50080",
+   "kickoff": "2026-11-25T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049634",
+   "md": 5,
+   "home": "52747",
+   "away": "50137",
+   "kickoff": "2026-11-25T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049635",
+   "md": 5,
+   "home": "50138",
+   "away": "50107",
+   "kickoff": "2026-11-25T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049636",
+   "md": 5,
+   "home": "50124",
+   "away": "52319",
+   "kickoff": "2026-11-25T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049637",
+   "md": 5,
+   "home": "50149",
+   "away": "52682",
+   "kickoff": "2026-11-25T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049638",
+   "md": 5,
+   "home": "50043",
+   "away": "7889",
+   "kickoff": "2026-11-25T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049639",
+   "md": 5,
+   "home": "75797",
+   "away": "50037",
+   "kickoff": "2026-11-25T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049640",
+   "md": 5,
+   "home": "52707",
+   "away": "52692",
+   "kickoff": "2026-11-25T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049649",
+   "md": 6,
+   "home": "70691",
+   "away": "2609356",
+   "kickoff": "2026-12-08T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049651",
+   "md": 6,
+   "home": "52319",
+   "away": "52749",
+   "kickoff": "2026-12-08T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049643",
+   "md": 6,
+   "home": "50037",
+   "away": "52498",
+   "kickoff": "2026-12-08T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049644",
+   "md": 6,
+   "home": "50080",
+   "away": "52919",
+   "kickoff": "2026-12-08T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049645",
+   "md": 6,
+   "home": "50137",
+   "away": "50149",
+   "kickoff": "2026-12-08T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049646",
+   "md": 6,
+   "home": "52683",
+   "away": "52747",
+   "kickoff": "2026-12-08T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049647",
+   "md": 6,
+   "home": "52682",
+   "away": "2603790",
+   "kickoff": "2026-12-08T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049648",
+   "md": 6,
+   "home": "50136",
+   "away": "50043",
+   "kickoff": "2026-12-08T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049650",
+   "md": 6,
+   "home": "50129",
+   "away": "50067",
+   "kickoff": "2026-12-08T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049655",
+   "md": 6,
+   "home": "52265",
+   "away": "79946",
+   "kickoff": "2026-12-09T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049657",
+   "md": 6,
+   "home": "52797",
+   "away": "52707",
+   "kickoff": "2026-12-09T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049652",
+   "md": 6,
+   "home": "7889",
+   "away": "50064",
+   "kickoff": "2026-12-09T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049653",
+   "md": 6,
+   "home": "52280",
+   "away": "50051",
+   "kickoff": "2026-12-09T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049654",
+   "md": 6,
+   "home": "52758",
+   "away": "50138",
+   "kickoff": "2026-12-09T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049656",
+   "md": 6,
+   "home": "50062",
+   "away": "50124",
+   "kickoff": "2026-12-09T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049658",
+   "md": 6,
+   "home": "50107",
+   "away": "75797",
+   "kickoff": "2026-12-09T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049659",
+   "md": 6,
+   "home": "63405",
+   "away": "52692",
+   "kickoff": "2026-12-09T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049660",
+   "md": 6,
+   "home": "52277",
+   "away": "59333",
+   "kickoff": "2026-12-09T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049666",
+   "md": 7,
+   "home": "59333",
+   "away": "50124",
+   "kickoff": "2027-01-19T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049667",
+   "md": 7,
+   "home": "50067",
+   "away": "52749",
+   "kickoff": "2027-01-19T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049661",
+   "md": 7,
+   "home": "50051",
+   "away": "63405",
+   "kickoff": "2027-01-19T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049662",
+   "md": 7,
+   "home": "50138",
+   "away": "7889",
+   "kickoff": "2027-01-19T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049663",
+   "md": 7,
+   "home": "52683",
+   "away": "52758",
+   "kickoff": "2027-01-19T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049664",
+   "md": 7,
+   "home": "50064",
+   "away": "52498",
+   "kickoff": "2027-01-19T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049665",
+   "md": 7,
+   "home": "75797",
+   "away": "52797",
+   "kickoff": "2027-01-19T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049668",
+   "md": 7,
+   "home": "50107",
+   "away": "50043",
+   "kickoff": "2027-01-19T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049669",
+   "md": 7,
+   "home": "50129",
+   "away": "50137",
+   "kickoff": "2027-01-19T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049674",
+   "md": 7,
+   "home": "52692",
+   "away": "70691",
+   "kickoff": "2027-01-20T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049678",
+   "md": 7,
+   "home": "2609356",
+   "away": "50136",
+   "kickoff": "2027-01-20T17:45:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049670",
+   "md": 7,
+   "home": "50149",
+   "away": "50080",
+   "kickoff": "2027-01-20T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049671",
+   "md": 7,
+   "home": "52682",
+   "away": "50037",
+   "kickoff": "2027-01-20T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049672",
+   "md": 7,
+   "home": "52265",
+   "away": "52280",
+   "kickoff": "2027-01-20T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049673",
+   "md": 7,
+   "home": "2603790",
+   "away": "52707",
+   "kickoff": "2027-01-20T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049675",
+   "md": 7,
+   "home": "79946",
+   "away": "52747",
+   "kickoff": "2027-01-20T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049676",
+   "md": 7,
+   "home": "52277",
+   "away": "52919",
+   "kickoff": "2027-01-20T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049677",
+   "md": 7,
+   "home": "52319",
+   "away": "50062",
+   "kickoff": "2027-01-20T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049679",
+   "md": 8,
+   "home": "52747",
+   "away": "50067",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049680",
+   "md": 8,
+   "home": "50037",
+   "away": "52265",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049681",
+   "md": 8,
+   "home": "7889",
+   "away": "52277",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049682",
+   "md": 8,
+   "home": "52919",
+   "away": "50149",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049683",
+   "md": 8,
+   "home": "52280",
+   "away": "2609356",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049684",
+   "md": 8,
+   "home": "50080",
+   "away": "79946",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049685",
+   "md": 8,
+   "home": "50124",
+   "away": "52692",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049686",
+   "md": 8,
+   "home": "52758",
+   "away": "50129",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049687",
+   "md": 8,
+   "home": "50137",
+   "away": "75797",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049688",
+   "md": 8,
+   "home": "50043",
+   "away": "59333",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049689",
+   "md": 8,
+   "home": "50062",
+   "away": "50107",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049690",
+   "md": 8,
+   "home": "52749",
+   "away": "2603790",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049691",
+   "md": 8,
+   "home": "50136",
+   "away": "52319",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049692",
+   "md": 8,
+   "home": "70691",
+   "away": "52682",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049693",
+   "md": 8,
+   "home": "52707",
+   "away": "50051",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049694",
+   "md": 8,
+   "home": "52498",
+   "away": "52683",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049695",
+   "md": 8,
+   "home": "52797",
+   "away": "50138",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  },
+  {
+   "id": "2049696",
+   "md": 8,
+   "home": "63405",
+   "away": "50064",
+   "kickoff": "2027-01-27T20:00:00Z",
+   "status": "UPCOMING",
+   "hg": null,
+   "ag": null
+  }
+ ]
+}

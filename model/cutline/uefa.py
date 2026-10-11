@@ -58,7 +58,8 @@ def normalize_uefa(raw: list[dict], competition: str) -> list[Match]:
     out = []
     for r in raw:
         status = _STATUS.get(_get(r, "status"), "OTHER")
-        kickoff = _get(r, "kickOffTime", "dateTime")
+        ko = _get(r, "kickOffTime")
+        kickoff = ko["dateTime"] if "dateTime" in ko else _get(ko, "date") + "T00:00:00Z"
         stage = _get(r, "round", "metaData", "type")
         md = r.get("matchday", {}).get("name") if isinstance(r.get("matchday"), dict) else None
         matchday = int(md[2:]) if md and md.startswith("MD") and md[2:].isdigit() else None
