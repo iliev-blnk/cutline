@@ -333,9 +333,9 @@
    "home": "52277",
    "away": "50149",
    "kickoff": "2026-10-13T16:45:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 2
   },
   {
    "id": "2049579",
@@ -343,9 +343,9 @@
    "home": "2609356",
    "away": "52498",
    "kickoff": "2026-10-13T16:45:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
   },
   {
    "id": "2049571",
@@ -353,9 +353,9 @@
    "home": "50138",
    "away": "50043",
    "kickoff": "2026-10-13T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 4
   },
   {
    "id": "2049572",
@@ -363,9 +363,9 @@
    "home": "52280",
    "away": "75797",
    "kickoff": "2026-10-13T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 0
   },
   {
    "id": "2049573",
@@ -373,9 +373,9 @@
    "home": "50124",
    "away": "52682",
    "kickoff": "2026-10-13T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 0
   },
   {
    "id": "2049574",
@@ -383,9 +383,9 @@
    "home": "2603790",
    "away": "50062",
    "kickoff": "2026-10-13T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
   },
   {
    "id": "2049575",
@@ -393,9 +393,9 @@
    "home": "70691",
    "away": "50136",
    "kickoff": "2026-10-13T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 1
   },
   {
    "id": "2049576",
@@ -403,9 +403,9 @@
    "home": "50067",
    "away": "50080",
    "kickoff": "2026-10-13T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 4
   },
   {
    "id": "2049578",
@@ -413,9 +413,9 @@
    "home": "52319",
    "away": "50037",
    "kickoff": "2026-10-13T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 3
   },
   {
    "id": "2049584",
@@ -423,9 +423,9 @@
    "home": "52749",
    "away": "79946",
    "kickoff": "2026-10-14T16:45:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 2
   },
   {
    "id": "2049588",
@@ -433,9 +433,9 @@
    "home": "63405",
    "away": "7889",
    "kickoff": "2026-10-14T16:45:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 6
   },
   {
    "id": "2049580",
@@ -443,9 +443,9 @@
    "home": "52919",
    "away": "52747",
    "kickoff": "2026-10-14T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 2,
+   "ag": 4
   },
   {
    "id": "2049581",
@@ -453,9 +453,9 @@
    "home": "50137",
    "away": "50051",
    "kickoff": "2026-10-14T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 4
   },
   {
    "id": "2049582",
@@ -463,9 +463,9 @@
    "home": "52683",
    "away": "52692",
    "kickoff": "2026-10-14T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 6,
+   "ag": 0
   },
   {
    "id": "2049583",
@@ -473,9 +473,9 @@
    "home": "52265",
    "away": "50064",
    "kickoff": "2026-10-14T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 2
   },
   {
    "id": "2049585",
@@ -483,9 +483,9 @@
    "home": "59333",
    "away": "52758",
    "kickoff": "2026-10-14T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 1,
+   "ag": 0
   },
   {
    "id": "2049586",
@@ -493,9 +493,9 @@
    "home": "52707",
    "away": "50129",
    "kickoff": "2026-10-14T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 3,
+   "ag": 1
   },
   {
    "id": "2049587",
@@ -503,9 +503,9 @@
    "home": "52797",
    "away": "50107",
    "kickoff": "2026-10-14T19:00:00Z",
-   "status": "UPCOMING",
-   "hg": null,
-   "ag": null
+   "status": "FINISHED",
+   "hg": 0,
+   "ag": 3
   },
   {
    "id": "2049595",
